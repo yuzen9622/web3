@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="../../frontend/prism.css" />
+    <script
+      src="https://kit.fontawesome.com/b61b5c8440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../style/style.RWD.css" />
+    <link rel="shortcut icon" href="../../img/anthos.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anthos</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../img/vidoes/anthos-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../../frontend/">Overview</a>
+                </li>
+                <li><a href="../../frontend/HTML.html">HTML</a></li>
+                <li><a href="../../frontend/CSS.html">CSS</a></li>
+                <li><a href="../../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../../frontend/React.html">React</a></li>
+                <li><a href="../../frontend/Angular.html">Angular</a></li>
+                <li><a href="../../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../">Overview</a>
+                </li>
+                <li><a href="../nodejs.html">Node.js</a></li>
+                <li><a href="../java.html">Java</a></li>
+                <li><a href="../php.html">PHP</a></li>
+                <li><a href="../express.html">Express.js</a></li>
+                <li><a href="../spring.html">Spring</a></li>
+                <li><a href="../laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="../sql/">Overview</a></li>
+                <li><a href="../sql/mysql.html">MySQL</a></li>
+                <li><a href="../sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./">Overview</a></li>
+                <li><a href="./anthos.html">Anthos</a></li>
+                <li><a href="./github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../../">Home</a>
+        </li>
+        <li>
+          <a href="../../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../../frontend/HTML.html">HTML</a></li>
+              <li><a href="../../frontend/CSS.html">CSS</a></li>
+              <li><a href="../../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../../frontend/React.html">React</a></li>
+              <li><a href="../../frontend/Angular.html">Angular</a></li>
+              <li><a href="../../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../nodejs.html">Node.js</a></li>
+              <li><a href="../java.html">Java</a></li>
+              <li><a href="../php.html">PHP</a></li>
+              <li><a href="../express.html">Express.js</a></li>
+              <li><a href="../spring.html">Spring</a></li>
+              <li><a href="../laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../sql">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../sql/mysql.html">MySQL</a></li>
+              <li><a href="../sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../cicd/anthos.html">Anthos</a></li>
+              <li><a href="../cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是Anthos</a></li>
+            <li class="li2"><a href="#title2">Anthos Service Mesh</a></li>
+            <li class="li3">
+              <a href="#title3">使用Anthos可加速應用程式現代化</a>
+            </li>
+            <li>
+              <a href="https://cloud.google.com/anthos?hl=zh-TW" target="_blank"
+                >Anthos網站連結</a
+              >
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是Anthos</h2>
+            <ol>
+              <li>
+                讓企業的敏捷開發能夠跨平台的使用,所謂跨平台就是讓您的應用服務能夠自由移動在地端/公有雲/多雲的跨平台環境。
+              </li>
+              <li>一個相互協作的獨特服務平台，可在整個企業中創造價值。</li>
+              <li>
+                一個現代化的應用程序管理平台，可在公有雲和地端環境提供一致的開發和維運.
+              </li>
+            </ol>
+            <p>
+              Anthos 是一套多雲暨混合雲管理平台，企業能以 Anthos
+              平台統一部署、管理、運行橫跨雲地環境的應用程式，還能將政策統一推送到各種環境中。
+              不論是開發、維運或資安團隊，Anthos 都能省去 IT
+              管理的麻煩，提升業務營運效率。
+            </p>
+            <p style="width: 100%; font-size: 25px">另外Anthos由三大塊組成:</p>
+            <ol style="width: 100%; font-size: 20px">
+              <li>Container Orchestration</li>
+              <li>Service Mesh</li>
+              <li>Config Management</li>
+            </ol>
+            <ul style="width: 100%; font-size: 20px">
+              <p style="font-size: 20px; margin-left: 0px">Anthos的額外效益:</p>
+              <li>能夠讓您的傳統程式服務轉換成容器化的應用程式服務</li>
+              <li>
+                在企業實行敏捷開發的同時也提高的程式的安全性與操作的便利性.同時滿足了企業的開發/維運/資安三個團隊的需求
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">Anthos Service Mesh</h2>
+            <p style="font-size: 30px">
+              <strong>此管理功能提供了以下的服務:</strong>
+            </p>
+            <ol style="width: 100%">
+              <li>提供細緻化的路由控管，支援HTTP/gRPC/WebSocket/TCP</li>
+              <li>
+                彈性的功能,例如 retries, fail overs, circuit breakers, and fault
+                injection等.讓您可以執行您的Chaos engineering測試
+              </li>
+              <li>
+                可加入政策層及API的配置，支援 access control and rate limiting.
+              </li>
+              <li>
+                在GKE On-Prem的監控，全部都可以與GCP的Stack Driver整合，包含
+                metrics, logs, traces ,ingress , egress等
+              </li>
+              <li>
+                每個微服務之間的通訊，是基於GCP的Service
+                Account做驗證與授權的管控
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title3">使用Anthos可加速應用程式現代化</h2>
+            <p>
+              Anthos 是第一個開放的應用程式現代化平台，可在各種雲環境
+              (代管雲、on-premises 和邊緣計算中) 提供統一的控制介面和服務。 自
+              2019 年 GA 以來，各領域和各地區的企業都轉向
+              Anthos，將雲、容器、微服務的好處帶入其應用程式。<br />
+              根據 Forrester 的《總體經濟影響》研究，採用 Anthos
+              的客戶投資報酬高達 5 倍，因為 Anthos
+              不僅節省成本，更解放開發人員的生產力。
+              對於金融服務業來說，推出新功能和更新核心應用程式至少需要一季的時間。<br />
+            </p>
+            <p>
+              安全性機制及自動化政策:<br />
+              Anthos
+              將安全性機制整合到應用程式生命週期的每個階段，從開發、建構到實際運作。
+              能透過 Anthos Config Management 跨混合式雲端，和多雲端 Kubernetes
+              部署項目大規模定義政策，並強制執行。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../../frontend/">Overview</a>
+          <a href="../../frontend/HTML.html">HTML</a>
+          <a href="../../frontend/CSS.html">CSS</a>
+          <a href="../../frontend/JavaScript.html">Javascript</a>
+          <a href="../../frontend/React.html">React</a>
+          <a href="../../frontend/Angular.html">Angular</a>
+          <a href="../../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../">Overview</a>
+          <a href="../nodejs.html">Node.js</a>
+          <a href="../java.html">Java</a>
+          <a href="../php.html">PHP</a>
+          <a href="../express.html">Express.js</a>
+          <a href="../spring.html">Spring Boot</a>
+          <a href="../laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="../sql">OverView</a>
+
+          <a href="../sql/mysql.html">MySQL</a>
+          <a href="../sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./">OverView</a>
+          <a href="./anthos.html">Anthos</a>
+          <a href="./github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../../script/script.js"></script>
+    <script src="../../frontend/prism.js"></script>
+  </body>
+</html>

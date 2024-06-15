@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../img/express.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+    <script
+      src="https://kit.fontawesome.com/b61b5c8440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express.js</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/express-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../frontend/">Overview</a>
+                </li>
+                <li><a href="../frontend/HTML.html">HTML</a></li>
+                <li><a href="../frontend/CSS.html">CSS</a></li>
+                <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../frontend/React.html">React</a></li>
+                <li><a href="../frontend/Angular.html">Angular</a></li>
+                <li><a href="../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="./">Overview</a>
+                </li>
+                <li><a href="./nodejs.html">Node.js</a></li>
+                <li><a href="./java.html">Java</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./express.html">Express.js</a></li>
+                <li><a href="./spring.html">Spring</a></li>
+                <li><a href="./laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./sql/">Overview</a></li>
+                <li><a href="./sql/mysql.html">MySQL</a></li>
+                <li><a href="./sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./cicd/">Overview</a></li>
+                <li><a href="./cicd/anthos.html">Anthos</a></li>
+                <li><a href="./cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../frontend/HTML.html">HTML</a></li>
+              <li><a href="../frontend/CSS.html">CSS</a></li>
+              <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../frontend/React.html">React</a></li>
+              <li><a href="../frontend/Angular.html">Angular</a></li>
+              <li><a href="../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./sql/">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是Express</a></li>
+            <li class="li2"><a href="#title2">Express的基本路由</a></li>
+            <li class="li3"><a href="#title3">Express 的程式碼長怎樣?</a></li>
+            <li>
+              <a href="https://expressjs.com/zh-tw/" target="_blank"
+                >Express網站連結</a
+              >
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是Express</h2>
+            <p>
+              Express 是一個用於 Node.js 的快速、不拘一格、極簡主義的Web框架。
+              Express 是一個最小且靈活的 Node.js Web 應用程式框架，它為 Web
+              和行動應用程式提供了一組強大的功能。
+            </p>
+            <ul>
+              <li>
+                <p>
+                  替不同 HTTP Method、不同 URL 路徑的 requests
+                  編寫不同的處理方法
+                </p>
+              </li>
+              <li>
+                <p>
+                  透過整合「畫面」的渲染引擎來達到插入資料到樣板中產生 response
+                </p>
+              </li>
+              <li>
+                <p>
+                  設定常見的 web 應用設定，例如：連線用的 port 和產生 response
+                  的樣板位置
+                </p>
+              </li>
+              <li>
+                <p>在 request 的處理流程中增加額外的「中間層」進行處理</p>
+              </li>
+            </ul>
+            <p>
+              雖然 Express
+              本身非常簡單，但開發者們已經創造相容的中間層套件來解決大部份 web
+              開發的問題，這些套件能處理 cookies, sessions，登入，URL 參數，POST
+              資料，安全標頭等等，你能在Express
+              Middleware中找到這些套件的列表（以及其他流行的第三方套件）
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">Express的基本路由</h2>
+            <p>
+              Express 提供了指定特定 HTTP 動詞（GET、POST、SET等）和 URL
+              模式（「路由」）呼叫什麼函數的方法，以及指定使用什麼模板（「檢視」）引擎以及模板檔案所在位置的方法，以及使用什麼模板來呈現響應。您可以使用
+              Express 中間件來新增對
+              cookie、會話和使用者、取得POST/GET參數等的支援。
+            </p>
+            <p>
+              傳統的資料驅動網站中，web 應用程式會等待來自瀏覽器(或其他客戶端)的
+              HTTP Request，接收到 Request 後根據 URL
+              和可能夾帶的POST/GET資料來決定需要回應什麼動作，根據需要可能對資料庫進行讀寫或執行滿足
+              Request 所需的其他任務。web 應用程式會回應 Response
+              給瀏覽器，通常是藉由插入檢所到的資料到 HTML 模板中動態產生 HTML
+              頁面讓瀏覽器顯示。
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title3">Express 的程式碼長怎樣?</h2>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">
+var express = require("express");
+var app = express();
+
+app.get("/", function (req, res) {
+  res.send("Hello World!");
+});
+
+app.listen(3000, function () {
+  console.log("Example app listening on port 3000!");
+});
+              </code></pre>
+            </div>
+            <p>
+              前兩行require()（導入）express 模組並建立Express
+              應用程式。該物件傳統上稱為app，具有用於路由 HTTP
+              請求、配置中間件、呈現 HTML
+              視圖、註冊模板引擎以及修改控制應用程式行為方式的應用程式設定（例如環境模式、路由定義是否區分大小寫、
+              ETC。 ）
+            </p>
+            <p>
+              程式碼的中間部分（以
+              開頭的三行app.get）顯示了路由定義。此方法指定一個回呼函數，只要存在具有相對於站點根目錄的路徑
+              ( ) 的app.get()HTTP
+              請求，就會呼叫該回呼函數。回調函數將請求和回應物件作為參數，並簡單地呼叫回應以傳回字串“Hello
+              World!”GET'/'send()
+            </p>
+            <p>
+              最後一個區塊在連接埠「3000」上啟動伺服器並將日誌註釋列印到控制台。伺服器運行後，您可以localhost:3000在瀏覽器中查看傳回的範例回應。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../frontend/">Overview</a>
+          <a href="../frontend/HTML.html">HTML</a>
+          <a href="../frontend/CSS.html">CSS</a>
+          <a href="../frontend/JavaScript.html">Javascript</a>
+          <a href="../frontend/React.html">React</a>
+          <a href="../frontend/Angular.html">Angular</a>
+          <a href="../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="./">Overview</a>
+          <a href="./nodejs.html">Node.js</a>
+          <a href="./java.html">Java</a>
+          <a href="./php.html">PHP</a>
+          <a href="./express.html">Express.js</a>
+          <a href="./spring.html">Spring Boot</a>
+          <a href="./laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./sql/">OverView</a>
+
+          <a href="./sql/mysql.html">MySQL</a>
+          <a href="./sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./cicd/">OverView</a>
+          <a href="./cicd/anthos.html">Anthos</a>
+          <a href="./cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="../frontend/prism.js"></script>
+  </body>
+</html>

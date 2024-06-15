@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="./css/html.css" />
+    <link rel="icon" href="../img/Angular.png" />
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="prism.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.RWD.css" />
+    <title>Angular</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/Angular-bg.png);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="rwd">
+      <button id="bar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="rwd-ul">
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li id="rwd-li">
+          <a>Frontend Development </a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="./">Overview</a>
+              </li>
+              <li><a href="./HTML.html">HTML</a></li>
+              <li><a href="./CSS.html">CSS</a></li>
+              <li><a href="./JavaScript.html">Javascript</a></li>
+              <li><a href="./React.html">React</a></li>
+              <li><a href="./Angular.html">Angular</a></li>
+              <li><a href="./Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Backend Development</a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="../backend/">Overview</a>
+              </li>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Database Management</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/">Overview</a></li>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>CI/CD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/">Overview</a></li>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul>
+      <li>
+        <a href="../">Home</a>
+      </li>
+      <li>
+        <a href="./">Frontend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="./HTML.html">HTML</a></li>
+            <li><a href="./CSS.html">CSS</a></li>
+            <li><a href="./JavaScript.html">Javascript</a></li>
+            <li><a href="./React.html">React</a></li>
+            <li><a href="./Angular.html">Angular</a></li>
+            <li><a href="./Vue.html">Vue</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/">Backend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/nodejs.html">Node.js</a></li>
+            <li><a href="../backend/java.html">Java</a></li>
+            <li><a href="../backend/php.html">PHP</a></li>
+            <li><a href="../backend/express.html">Express.js</a></li>
+            <li><a href="../backend/spring.html">Spring</a></li>
+            <li><a href="../backend/laravel.html">Laravel</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/sql/">SQL</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+            <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/cicd/">CICD</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+            <li><a href="../backend/cicd/github.html">Github</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1">
+              <a href="#title1">Hello Angular</a>
+            </li>
+            <li class="li2">
+              <a href="#title2">Angular 如何使用 JavaScript？</a>
+            </li>
+            <li class="li3">
+              <a href="#title3">設置你的第一個 Angular 應用程式</a>
+            </li>
+            <li class="li4">
+              <a href="#title4">深入了解 Angular 特性</a>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">Hello Angular</h2>
+
+            <p>
+              Angular是一個由Google維護的開源Web應用框架。它使用TypeScript語言，並通過提供基於組件的架構來簡化開發複雜的單頁應用程式（SPA）。Angular具有強大的工具和功能，例如雙向數據綁定、指令、依賴注入和服務。
+            </p>
+            <br />
+            <p>
+              Angular的目標是提高開發效率和可維護性。它通過嚴格的型別檢查和強大的工具鏈來實現這一點，例如Angular
+              CLI、Angular Material和RxJS。
+            </p>
+            <br />
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">Angular 如何使用 JavaScript？</h2>
+
+            <p>
+              Angular主要使用TypeScript，這是一種JavaScript的超集，具有靜態類型檢查和面向對象編程特性。這使得代碼更加嚴謹和易於維護。下面是一個簡單的Angular元件示例：
+            </p>
+            <div class="code">
+              <pre>TS</pre>
+              <hr />
+              <pre><code class="language-ts">import { Component } from '@angular/core';
+    
+    @Component({
+      selector: 'app-root',
+      template: `<h1>Hello, Angular!</h1>`,
+      styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+      title = 'Hello Angular';
+    }</code></pre>
+            </div>
+            <p>
+              上述代碼中，我們定義了一個Angular元件。<code>@Component</code>裝飾器指定了元件的選擇器、模板和樣式表。模板中的HTML代碼將顯示在應用程式中。
+            </p>
+            <p>
+              Angular的主要優勢之一是它的模塊化設計。應用程式可以分為多個模塊，每個模塊包含一組相關的元件、指令和服務。這使得應用程式更加結構化和易於維護。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title3">設置你的第一個 Angular 應用程式</h2>
+            <p>
+              使用Angular，你可以使用Angular
+              CLI來初始化和管理你的應用程式。Angular
+              CLI是一個強大的命令行工具，提供了創建、開發和測試Angular應用程式的功能。
+            </p>
+
+            <p>環境要求</p>
+            <p>
+              在使用Angular
+              CLI之前，你需要先安裝Node.js和npm（Node.js的套件管理器）。建議你使用Node.js的長期支援（LTS）版本。
+            </p>
+            <p>初始化你的應用程式</p>
+            <p>要創建一個新的Angular應用程式，請在終端機中運行以下命令：</p>
+            <div class="code">
+              <pre>Terminal</pre>
+              <hr />
+              <pre><code class="language-powershell">ng new my-angular-app</code></pre>
+            </div>
+            <p>
+              此命令將創建一個名為<code>my-angular-app</code>的目錄，並在其中生成Angular應用程式的基本結構，包括必要的文件和目錄。
+            </p>
+            <p>然後，進入該目錄並啟動開發服務器：</p>
+            <div class="code">
+              <pre>Terminal</pre>
+              <hr />
+              <pre><code class="language-powershell">cd my-angular-app
+    ng serve</code></pre>
+            </div>
+            <p>
+              這將啟動開發服務器，並在<code>http://localhost:4200</code>上運行你的應用程式。現在，你可以在瀏覽器中訪問該地址來查看你的第一個Angular應用程式。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title4">深入了解 Angular 特性</h2>
+            <p>
+              Angular
+              提供了許多強大的特性來簡化和加速開發過程。以下是一些關鍵特性：
+            </p>
+            <ul>
+              <li>
+                <strong>雙向數據綁定：</strong
+                >允許模型和視圖之間的自動同步，確保它們始終保持一致。
+              </li>
+              <li>
+                <strong>指令：</strong
+                >指令是用來操作DOM的特殊標記。常見的指令包括<code>*ngIf</code>和<code>*ngFor</code>。
+              </li>
+              <li>
+                <strong>依賴注入：</strong
+                >這是一種設計模式，用於將服務或其他依賴項注入到元件中，從而提高代碼的可測試性和可維護性。
+              </li>
+              <li>
+                <strong>模組化：</strong
+                >Angular應用程式可以分為多個模塊，每個模塊包含一組相關的元件、指令和服務。這使得應用程式更加結構化和易於維護。
+              </li>
+              <li>
+                <strong>服務：</strong
+                >服務是用來共享數據和邏輯的，可在多個元件中使用，從而避免重複代碼。
+              </li>
+              <li>
+                <strong>路由：</strong
+                >Angular的路由系統允許你在應用程式中導航，並在不同的URL對應不同的視圖。
+              </li>
+              <li>
+                <strong>Reactive Extensions (RxJS)：</strong
+                >Angular使用RxJS來處理異步操作和事件流，提供了強大的操作符來處理數據流。
+              </li>
+            </ul>
+            <p>
+              這些特性使得Angular成為開發複雜和高效Web應用程式的強大工具。通過學習和應用這些特性，你可以顯著提高開發效率和應用程式的可維護性。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="./">Overview</a>
+          <a href="./HTML.html">HTML</a>
+          <a href="./CSS.html">CSS</a>
+          <a href="./JavaScript.html">Javascript</a>
+          <a href="./React.html">React</a>
+          <a href="./Angular.html">Angular</a>
+          <a href="./Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../backend/">Overview</a>
+          <a href="../backend/nodejs.html">Node.js</a>
+          <a href="../backend/java.html">Java</a>
+          <a href="../backend/php.html">PHP</a>
+          <a href="../backend/express.html">Express.js</a>
+          <a href="../backend/spring.html">Spring Boot</a>
+          <a href="../backend/laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="../backend/sql/">Overview</a>
+
+          <a href="../backend//sql/mysql.html">MySQL</a>
+          <a href="../backend/sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="../backend/cicd/">Overview</a>
+          <a href="../backend/cicd/anthos.html">Anthos</a>
+          <a href="../backend/cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="prism.js"></script>
+  </body>
+</html>

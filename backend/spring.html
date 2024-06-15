@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+    <link rel="icon" href="../img/spring.png" />
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Boot</title>
+    <style>
+      header {
+        width: 100%;
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/spring-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../frontend/">Overview</a>
+                </li>
+                <li><a href="../frontend/HTML.html">HTML</a></li>
+                <li><a href="../frontend/CSS.html">CSS</a></li>
+                <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../frontend/React.html">React</a></li>
+                <li><a href="../frontend/Angular.html">Angular</a></li>
+                <li><a href="../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="./">Overview</a>
+                </li>
+                <li><a href="./nodejs.html">Node.js</a></li>
+                <li><a href="./java.html">Java</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./express.html">Express.js</a></li>
+                <li><a href="./spring.html">Spring</a></li>
+                <li><a href="./laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./sql/">Overview</a></li>
+                <li><a href="./sql/mysql.html">MySQL</a></li>
+                <li><a href="./sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./cicd/">Overview</a></li>
+                <li><a href="./cicd/anthos.html">Anthos</a></li>
+                <li><a href="./cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../frontend/HTML.html">HTML</a></li>
+              <li><a href="../frontend/CSS.html">CSS</a></li>
+              <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../frontend/React.html">React</a></li>
+              <li><a href="../frontend/Angular.html">Angular</a></li>
+              <li><a href="../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./sql/">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是 Spring Boot?</a></li>
+            <li class="li2"><a href="#title2">Spring Boot的優勢</a></li>
+            <li class="li3"><a href="#title3">Spring Boot範例</a></li>
+            <li><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boots網站連結</a></li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是Spring Boot</h2>
+            <p>Spring Boot 是目前 Java 後端中最主流的開發框架</p>
+            <p>
+              幫助那些使用 Java
+              程式語言來撰寫後端程式的工程師，快速去架設一個後端系統起來的好用工具。
+              基本上 Spring Boot 就是 Java
+              後端中的一個好用的開發框架，只要你是使用 Java
+              來開發後端程式，那通常就是會使用 Spring Boot
+              這套框架，來加速你開發後端程式的效率
+            </p>
+            <p>很多人都以為Spring boot是程式碼產生器，但是其實Spring boot並沒有產生code，且以為Spring boot是用來產生application server或產生web server，但是其實Spring boot是用來整合embedded servers(像是 tomcat、Jetty)。</p>
+            <p>那Spring boot主要是用來啟動專案，假設你現在要產生一個web server，需要有MVC架構、Spring core、validation framework…，你需要設定很多東西來達到這些需求，如果使用Spring boot起專案就會非常快速。</p>
+            <p>Spring boot提供以下幾種啟動專案類型：</p>
+            <ul>
+              <li>
+                <p>Web</p>
+              </li>
+              <li>
+                <p>JPA</p>
+              </li>
+              <li>
+                <p>Enbedded Servers：假設想要啟動一個web application並且部署到linux box。在以往如果要這樣做需要安裝linux box，接著安裝Java，接著在安裝web server(Tomcat, weblogic , webspher)，接著再將application war 部署到這台機器。如果使用Spring boot，你可以打包你的server，像是你可以將你的tomcat 打包到你的application jar，這樣linux box就不需要在安裝web server只需要Java即可。</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">Spring Boot的優勢</h2>
+            <p>
+              優勢一：簡化 Spring 開發 使用 Spring Boot
+              的第一個好處，就是可以「簡化 Spring 的開發」
+            </p>
+            <p>
+              優勢二：快速整合主流框架 使用 Spring Boot
+              開發的第二個優勢，就是可以「快速的整合主流框架」
+            </p>
+          <p>以下列出了 Spring Boot 與傳統 Java 框架之間的幾個主要差異：</p>
+          <ol>
+            <li>
+              <p><strong>簡化的配置：</strong>Spring Boot 採用許多預設值來配置應用程式，這些預設值可節省開發人員的時間和精力。傳統的 Java 框架通常需要在配置文件中進行大量的手動配置。</p>
+            </li>
+            <li>
+              <p><strong>簡單的開發：</strong>Spring Boot 提供了豐富的快速開發工具，如 Spring Initializr，可以快速構建一個基本的 Spring Boot 應用程式，減少了開發人員的工作量。</p>
+            </li>
+            <li>
+              <p><strong>微服務：</strong>Spring Boot 非常適合構建微服務架構。Spring Boot 可以使用 Spring Cloud 框架來實現服務發現、負載均衡和數據處理等功能。</p>
+            </li>
+            <li>
+              <p><strong>開箱即用的功能：</strong>Spring Boot 預置了許多常用的功能，如資料庫連接、安全性、日誌紀錄和許多第三方庫的支持等。這些功能使得開發人員可以更快速地構建應用程式，而不必花費太多時間來處理底層細節。</p>
+            </li>
+          </ol>
+           <p>使用 Spring Boot 開發 Web 應用程式還有其他的好處，例如：</p>
+           <ol>
+            <li>
+              <p><strong>自動配置：</strong>Spring Boot 可以自動配置您的應用程式，包括自動配置數據庫連接、自動配置 Web 應用程式、自動配置安全性等。</p>
+            </li>
+            <li>
+              <p><strong>易於管理：</strong>Spring Boot 非常容易管理和維護。您可以使用一些內建的功能來管理應用程式，例如健康檢查、日誌管理、性能監控等。</p>
+            </li>
+            <li>
+              <p><strong>優化的性能：</strong>Spring Boot 可以幫助您優化應用程式的性能，包括自動配置快取、使用內存數據庫等。</p>
+            </li>
+            <li>
+              <p><strong>可擴展性強：</strong>Spring Boot 非常容易擴展，您可以很容易地添加新的功能和服務，並將它們整合到現有的應用程式中。</p>
+            </li>
+           </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title3">Spring Boot範例</h2>
+            <p>
+              @Required： 它適用於 bean 設定方法。
+              它指示必須在設定時使用必需的屬性填充帶註解的Bean，否則它將引發異常
+              BeanInitilizationException。
+            </p>
+            <div class="code">
+              <pre>Java</pre>
+              <hr>
+              <pre><code class="lang-java">
+public class Machine {
+  private Integer cost;
+  @Required
+  public void setCost(Integer cost) {
+  this.cost = cost;
+  }
+  public Integer getCost() {
+  return cost;
+  } 
+}
+              </code></pre>
+            </div>
+            
+            </p>
+            <p>
+              @Autowired： ：
+              Spring透過提供@Autowired注解來提供基於註解的自動裝配。
+              它用於自動連接setter方法，實例變數和構造函數上的spring bean。
+              當我們使用@Autowired批注時，spring容器通過匹配數據類型自動連接bean。
+            </p>
+            <div class="code">
+              <pre>Java</pre>
+              <hr>
+              <pre><code class="lang-java">@Component
+public class Customer{
+private Person person;
+@Autowired
+public Customer(Person person){ 
+this.person=person;
+}
+}</code></pre>
+            </div>
+        
+            <p>
+              @Configuration： ： 它是一個類級別的注解。
+              帶有@Configuration注解的類由Spring Containers用作bean定義的源。
+            </p>
+            <div class="code">
+              <pre>Java</pre>
+              <hr>
+              <pre><code class="lang-java">@Configuration
+public class Vehicle{
+  @BeanVehicle engine(){
+  return new Vehicle();
+  }
+}</code></pre>
+            </div>
+           
+            <p>
+              @ComponentScan： ： 當我們要掃描套件中的bean時使用。
+              它與註解@Configuration一起使用。
+              我們還可以指定用於掃描Spring元件的基本軟體包。
+            </p>
+            <div class="code">
+              <pre>Java</pre>
+              <hr>
+              <pre><code class="lang-java">@ComponentScan(basePackages = "com.nhooo")
+@Configuration
+public class ScanComponent{
+// ...
+}</code></pre>
+            </div>
+           
+            <p>
+              @Bean： 是方法級的註解。 它是XML標記的代替方法。
+              它告訴產生由Spring Container管理的bean的方法。
+            </p>
+            <div class="code">
+              <pre>Java</pre>
+              <hr>
+              <pre><code class="lang-java">@Bean
+public BeanExample beanExample(){
+return new BeanExample ();
+}</code></pre>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../frontend/">Overview</a>
+          <a href="../frontend/HTML.html">HTML</a>
+          <a href="../frontend/CSS.html">CSS</a>
+          <a href="../frontend/JavaScript.html">Javascript</a>
+          <a href="../frontend/React.html">React</a>
+          <a href="../frontend/Angular.html">Angular</a>
+          <a href="../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="./">Overview</a>
+          <a href="./nodejs.html">Node.js</a>
+          <a href="./java.html">Java</a>
+          <a href="./php.html">PHP</a>
+          <a href="./express.html">Express.js</a>
+          <a href="./spring.html">Spring Boot</a>
+          <a href="./laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./sql/">OverView</a>
+
+          <a href="./sql/mysql.html">MySQL</a>
+          <a href="./sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./cicd/">OverView</a>
+          <a href="./cicd/anthos.html">Anthos</a>
+          <a href="./cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="../frontend/prism.js"></script>
+  </body>
+</html>

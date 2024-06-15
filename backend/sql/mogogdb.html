@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../../img/mongodb.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/b61b5c8440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../..//style/style.css" />
+    <link rel="stylesheet" href="../../frontend/prism.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/style.RWD.css" />
+    <title>MongoDB</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../img/vidoes/mongoDB-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../../frontend/">Overview</a>
+                </li>
+                <li><a href="../../frontend/HTML.html">HTML</a></li>
+                <li><a href="../../frontend/CSS.html">CSS</a></li>
+                <li><a href="../../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../../frontend/React.html">React</a></li>
+                <li><a href="../../frontend/Angular.html">Angular</a></li>
+                <li><a href="../../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../">Overview</a>
+                </li>
+                <li><a href="../nodejs.html">Node.js</a></li>
+                <li><a href="../java.html">Java</a></li>
+                <li><a href="../php.html">PHP</a></li>
+                <li><a href="../express.html">Express.js</a></li>
+                <li><a href="../spring.html">Spring</a></li>
+                <li><a href="../laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./">Overview</a></li>
+                <li><a href="./mysql.html">MySQL</a></li>
+                <li><a href="./mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="../cicd/">Overview</a></li>
+                <li><a href="../cicd/anthos.html">Anthos</a></li>
+                <li><a href="../cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../../frontend/HTML.html">HTML</a></li>
+              <li><a href="../../frontend/CSS.html">CSS</a></li>
+              <li><a href="../../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../../frontend/React.html">React</a></li>
+              <li><a href="../../frontend/Angular.html">Angular</a></li>
+              <li><a href="../../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../nodejs.html">Node.js</a></li>
+              <li><a href="../java.html">Java</a></li>
+              <li><a href="../php.html">PHP</a></li>
+              <li><a href="../express.html">Express.js</a></li>
+              <li><a href="../spring.html">Spring</a></li>
+              <li><a href="../laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="./mysql.html">MySQL</a></li>
+              <li><a href="./mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../cicd/anthos.html">Anthos</a></li>
+              <li><a href="../cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是MongoDB</a></li>
+            <li class="li2"><a href="#title2">MongoDB特色</a></li>
+            <li class="li3"><a href="#title3">MongoDB應用</a></li>
+            <li>
+              <a
+                href="https://www.mongodb.com/cloud/atlas/lp/try4-tw?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_apac-tw_ps-all_desktop_zho_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=20378068730&adgroup=154980287401&cq_cmp=20378068730&gad_source=1&gclid=Cj0KCQjw9vqyBhCKARIsAIIcLMHPJleo4dsjPiNvgUuddU8NAtwa_swzWTsYuC7PyclG9A0Djnk11pEaAkfyEALw_wcB"
+                target="_blank"
+              >
+                MongoDB網站連結
+              </a>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是MongoDB</h2>
+            <p>
+              MongoDB是一種文件導向的資料庫管理系統，用C++等語言撰寫而成，介於關係型資料庫和非關係型資料庫之間，以解決應用程式開發社群中的大量現實問題。
+              MongoDB由MongoDB
+              Inc.（當時是10gen團隊）於2007年10月開發，2009年2月首度推出，現以看源的伺服器端公共授權（SSPL）分發。
+            </p>
+            <p>
+              語言支援
+              MongoDB有官方的驅動如下：C，C++，C#，Erlang，Haskell，Java，JavaScript，Lisp，fibjs，node.JS，Perl，PHP，Python，Ruby，Scala，Go，Rust。
+            </p>
+            <p>
+              目前還有許多非官方式的驅動，ColdFusion,Delphi,Erlang,Factor,
+              Fantom, Go, JVM languages (Clojure, Groovy, Scala, etc.),Lua,HTTP
+              REST, Racket,和Smalltalk.。 如果想在 MongoDB
+              上使用其他的程式語言，MongoDB 社群也有人開發函式庫和驅動程式讓
+              MongoDB
+              可以跟幾乎所有的程式語言相容。同時如果要在同一個應用程式裡使用不同的程式語言，MongoDB
+              也是沒問題的！
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">MongoDB特色</h2>
+            <ol>
+              <li>
+                靈活文件儲存
+                <ul>
+                  文件導向的 MongoDB 可以接受各種不同結構的資料。
+                  <br />採用高彈性的 JSON 結構，MongoDB
+                  不需要資料庫綱要，可以串連不同性質的物件。
+                </ul>
+              </li>
+              <li>
+                便於更改
+                <ul>
+                  過往在更動資料庫時，需要先暫時關閉網站或是應用程式。但 MongoDB
+                  就是為了方便更改資料結構而誕生的。<br />
+                  使用
+                  MongoDB，可以不需關閉網站或應用程式就在資料庫裡添增新的資料。
+                </ul>
+              </li>
+              <li>
+                強大的查詢功能
+                <ul>
+                  資料庫除了容量大讓我們儲存各式文件以外，更重要的就是需要的時候找的到資料。<br />
+                  MongoDB 的設計讓資料容易存取，無需透過 joins 或 transactions
+                  即可查詢資料。<br />
+                  搭配 MongoDB Query API
+                  甚至可以以簡單的程式碼進行複雜的資料分析。<br />
+                </ul>
+              </li>
+              <li>
+                高性能
+                <ul>
+                  在文件導向的 MongoDB
+                  裡，資料可以嵌入在一個文件中。查詢資料因此變得更加快速。
+                  <br />
+                  另外，MongoDB的insertMany 和 updateMany 功能也讓 MongoDB
+                  比傳統的關聯式資料庫在同時插入或更新多個檔案時更佳方便。
+                </ul>
+              </li>
+              <li>
+                安裝容易
+                <ul>
+                  MongoDB Atlas 的簡單介面讓你可以輕鬆在雲端搭建 MongoDB
+                  叢集。<br />
+                  當然也可以搭建 MongoDB 在你自己的伺服器，或創建 MongoDB 容器。
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title3">MongoDB應用</h2>
+            <ul style="width: 100%; font-size: 25px; margin-left: 90px">
+              <u>適合使用 NoSQL/MongoDB 的情境有：</u>
+              <li><p>小型的專案，想要快速搭建資料庫</p></li>
+              <li><p>需要快速讀取資料</p></li>
+              <li><p>沒有明確的資料庫綱要 (Schema)</p></li>
+              <li><p>不需用到連接 (Join) 功能查詢資料</p></li>
+              <li><p>資料之間的關聯不複雜</p></li>
+            </ul>
+            <p>例如:</p>
+            <ul>
+              <li>
+                <p>
+                  零售業<br />
+                  可處理屬性不同的資料和快速查詢的 MongoDB
+                  適合用來儲存目錄資料和管理訂單資料，例如使用者帳戶、產品目錄、IoT
+                  裝置註冊及材料表系統。
+                  這項資料的屬性可能會有所不同，而且可以隨時間變更，以符合應用程式需求。
+                  使用 MongoDB的產品包含：Windows 市集和 XBox Live等。
+                </p>
+              </li>
+              <li>
+                <p>
+                  金融業<br />
+                  MongoDB
+                  也可以用在金融業的各種資料儲存情境中，例如開放銀行、eKYC
+                  或即時客戶分析等。英國銀行Nationwide Building Society (NBS)
+                  便是 MongoDB 資料庫的使用者。
+                </p>
+              </li>
+              <li>
+                <p>
+                  製造業<br />
+                  製造業更可以透過 MongoDB 提高效率，即時做出最好的決策。MongoDB
+                  可以讓供應鏈變得更加可見易懂，也可以讓你結合 IT 和 OT
+                  的數據，即時作出分析。Toyota 和 Volvo 都在使用
+                  MongoDB，讓生產製造更聰明。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer style="margin: 0">
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../../frontend/">Overview</a>
+          <a href="../../frontend/HTML.html">HTML</a>
+          <a href="../../frontend/CSS.html">CSS</a>
+          <a href="../../frontend/JavaScript.html">Javascript</a>
+          <a href="../../frontend/React.html">React</a>
+          <a href="../../frontend/Angular.html">Angular</a>
+          <a href="../../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../">Overview</a>
+          <a href="../nodejs.html">Node.js</a>
+          <a href="../java.html">Java</a>
+          <a href="../php.html">PHP</a>
+          <a href="../express.html">Express.js</a>
+          <a href="../spring.html">Spring Boot</a>
+          <a href="../laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./">OverView</a>
+
+          <a href="./mysql.html">MySQL</a>
+          <a href="./mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="../cicd/">OverView</a>
+          <a href="../cicd/anthos.html">Anthos</a>
+          <a href="../cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../../script/script.js"></script>
+    <script src="../../frontend/prism.js"></script>
+  </body>
+</html>

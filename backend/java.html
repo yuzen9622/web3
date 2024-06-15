@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+ <link rel="shortcut icon" href="../img/java.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css" />
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java</title>
+    <style>
+        header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/javabg.png);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../frontend/">Overview</a>
+                </li>
+                <li><a href="../frontend/HTML.html">HTML</a></li>
+                <li><a href="../frontend/CSS.html">CSS</a></li>
+                <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../frontend/React.html">React</a></li>
+                <li><a href="../frontend/Angular.html">Angular</a></li>
+                <li><a href="../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="./">Overview</a>
+                </li>
+                <li><a href="./nodejs.html">Node.js</a></li>
+                <li><a href="./java.html">Java</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./express.html">Express.js</a></li>
+                <li><a href="./spring.html">Spring</a></li>
+                <li><a href="./laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./sql/">Overview</a></li>
+                <li><a href="./sql/mysql.html">MySQL</a></li>
+                <li><a href="./sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./cicd/">Overview</a></li>
+                <li><a href="./cicd/anthos.html">Anthos</a></li>
+                <li><a href="./cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../frontend/HTML.html">HTML</a></li>
+              <li><a href="../frontend/CSS.html">CSS</a></li>
+              <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../frontend/React.html">React</a></li>
+              <li><a href="../frontend/Angular.html">Angular</a></li>
+              <li><a href="../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./sql/">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+<div class="menu">
+  <p>目錄</p>
+  <ol start="1">
+   
+    <li class="li1"><a href="#1">Java是甚麼??</a></li>
+    <li class="li1"><a href="#2">Java關鍵字</a></li>
+    <li class="li1"><a href="#3">介面和類別</a></li>
+    <li><a href="https://www.java.com/zh-TW/" target="_blank">Java網站連結</a></li>
+  </ol>
+</div>
+        
+      </aside>
+      <div class="container fade-right">
+        <section>
+         <div class="main-title">
+            <h2 id="1" >Java是甚麼?</h2>
+            <p>
+              Java是一種廣泛使用的電腦程式設計語言，擁有跨平台、物件導向、泛型程式設計的特性，廣泛應用於企業級Web應用開發和行動應用開發。
+              Java程式語言的風格十分接近C++語言。繼承了C++語言物件導向技術的核心，捨棄了容易引起錯誤的指標，以參照取代；移除了C++中的運算子重載和多重繼承特性，用介面取代；增加垃圾回收器功能。
+            </p>
+            <div class="img-article fade-right">
+              <div class="img-p">
+                <img src="../img/Duke，Java語言的吉祥物.jpeg" alt="" />
+                <h2>Duke，Java語言的吉祥物</h2>
+              </div>
+              <div class="img-p">
+                <img src="../img/詹姆斯·高斯林.jpg" width="400px" alt="" />
+                <h2>Java的發明人詹姆斯·高斯林</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+
+         
+          <h2 id="2"> Java關鍵字</h2>
+          <table border="1" class="wikitable">
+            <tbody>
+              <tr>
+                <th>類別</th>
+                <th>關鍵字</th>
+                <th>說明</th>
+              </tr>
+              <tr>
+                <td rowspan="3" align="center">訪問控制</td>
+                <td>private</td>
+                <td>私有的</td>
+              </tr>
+              <tr>
+                <td>protected</td>
+                <td>受保護的</td>
+              </tr>
+              <tr>
+                <td>public</td>
+                <td>公共的</td>
+              </tr>
+              <tr>
+                <td rowspan="13" align="center">類、方法和變數修飾詞</td>
+                <td>abstract</td>
+                <td>聲明抽象</td>
+              </tr>
+              <tr>
+                <td>class</td>
+                <td>類</td>
+              </tr>
+              <tr>
+                <td>extends</td>
+                <td>擴充,繼承</td>
+              </tr>
+              <tr>
+                <td>final</td>
+                <td>最終值,不可改變的</td>
+              </tr>
+              <tr>
+                <td>implements</td>
+                <td>實現（介面）</td>
+              </tr>
+              <tr>
+                <td>interface</td>
+                <td>介面</td>
+              </tr>
+              <tr>
+                <td>native</td>
+                <td>本地，原生方法（非Java實現）</td>
+              </tr>
+              <tr>
+                <td>new</td>
+                <td>新,建立</td>
+              </tr>
+              <tr>
+                <td>static</td>
+                <td>靜態</td>
+              </tr>
+              <tr>
+                <td>strictfp</td>
+                <td>嚴格,精準</td>
+              </tr>
+              <tr>
+                <td>synchronized</td>
+                <td>執行緒,同步</td>
+              </tr>
+              <tr>
+                <td>transient</td>
+                <td>短暫</td>
+              </tr>
+              <tr>
+                <td>volatile</td>
+                <td>易失</td>
+              </tr>
+              <tr>
+                <td rowspan="12" align="center">程式控制語句</td>
+                <td>break</td>
+                <td>跳出迴圈</td>
+              </tr>
+              <tr>
+                <td>case</td>
+                <td>定義一個值以供switch選擇</td>
+              </tr>
+              <tr>
+                <td>continue</td>
+                <td>繼續</td>
+              </tr>
+              <tr>
+                <td>default</td>
+                <td>預設</td>
+              </tr>
+              <tr>
+                <td>do</td>
+                <td>執行</td>
+              </tr>
+              <tr>
+                <td>else</td>
+                <td>否則</td>
+              </tr>
+              <tr>
+                <td>for</td>
+                <td>迴圈</td>
+              </tr>
+              <tr>
+                <td>if</td>
+                <td>如果</td>
+              </tr>
+              <tr>
+                <td>instanceof</td>
+                <td>實例</td>
+              </tr>
+              <tr>
+                <td>return</td>
+                <td>返回</td>
+              </tr>
+              <tr>
+                <td>switch</td>
+                <td>根據值選擇執行</td>
+              </tr>
+              <tr>
+                <td>while</td>
+                <td>迴圈</td>
+              </tr>
+              <tr>
+                <td rowspan="6" align="center">錯誤處理</td>
+                <td>assert</td>
+                <td>斷言表達式是否為真</td>
+              </tr>
+              <tr>
+                <td>catch</td>
+                <td>捕捉異常</td>
+              </tr>
+              <tr>
+                <td>finally</td>
+                <td>有沒有異常都執行</td>
+              </tr>
+              <tr>
+                <td>throw</td>
+                <td>丟擲一個異常對象</td>
+              </tr>
+              <tr>
+                <td>throws</td>
+                <td>聲明一個異常可能被丟擲</td>
+              </tr>
+              <tr>
+                <td>try</td>
+                <td>擷取異常</td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center">包相關</td>
+                <td>import</td>
+                <td>引入</td>
+              </tr>
+              <tr>
+                <td>package</td>
+                <td>包</td>
+              </tr>
+              <tr>
+                <td rowspan="9" align="center">基本類型</td>
+                <td>boolean</td>
+                <td>布林型</td>
+              </tr>
+              <tr>
+                <td>byte</td>
+                <td>位元組型</td>
+              </tr>
+              <tr>
+                <td>char</td>
+                <td>字元型</td>
+              </tr>
+              <tr>
+                <td>double</td>
+                <td>雙精度浮點</td>
+              </tr>
+              <tr>
+                <td>float</td>
+                <td>單精度浮點</td>
+              </tr>
+              <tr>
+                <td>int</td>
+                <td>整型</td>
+              </tr>
+              <tr>
+                <td>long</td>
+                <td>長整型</td>
+              </tr>
+              <tr>
+                <td>short</td>
+                <td>短整型</td>
+              </tr>
+              <tr>
+                <td>null</td>
+                <td>空</td>
+              </tr>
+              <tr>
+                <td rowspan="3" align="center">變數參照</td>
+                <td>super</td>
+                <td>父類別,超類</td>
+              </tr>
+              <tr>
+                <td>this</td>
+                <td>本類</td>
+              </tr>
+              <tr>
+                <td>void</td>
+                <td>無返回值</td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center">保留關鍵字</td>
+                <td>goto</td>
+                <td>是關鍵字，但不能使用</td>
+              </tr>
+              <tr>
+                <td>const</td>
+                <td>是關鍵字，但不能使用</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+        </section>
+     <section>
+      <div class="main-title">
+        <h2 id="3">介面和類別</h2>
+        <div class="code">
+          <pre>
+            <code class="lang-java">
+public interface Deleteable {
+  void delete();
+  System.out.println(" ATTACH DATABASE 'DatabaseName' As 'Alias-Name'");
+}    
+            </code>
+          </pre>
+          </div>
+
+          <p>這段程式碼的意思是任何實現（implement）Deleteable介面的類別都必須實現delete()方法。每個類別對這個方法的實現可以自行客製化。由此概念可以引出很多種使用方法，下面是一個類別的例子：</p>
+  <div class="code">
+          <pre>
+            <code class="lang-java">
+public class Fred implements Deleteable {
+    // 必須實作Deleteable介面中的delete方法
+     @Override 
+    public void delete() { 
+        // 實作的程式碼
+    }
+                    
+    // 這個類別也可以包含其他方法 
+    public void doOtherStuff() {
+            
+    }
+}    
+            </code>
+          </pre>
+          </div>
+        </div>
+      </div>
+     </section>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../frontend/">Overview</a>
+          <a href="../frontend/HTML.html">HTML</a>
+          <a href="../frontend/CSS.html">CSS</a>
+          <a href="../frontend/JavaScript.html">Javascript</a>
+          <a href="../frontend/React.html">React</a>
+          <a href="../frontend/Angular.html">Angular</a>
+          <a href="../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="./">Overview</a>
+          <a href="./nodejs.html">Node.js</a>
+          <a href="./java.html">Java</a>
+          <a href="./php.html">PHP</a>
+          <a href="./express.html">Express.js</a>
+          <a href="./spring.html">Spring Boot</a>
+          <a href="./laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./sql/">OverView</a>
+
+          <a href="./sql/mysql.html">MySQL</a>
+          <a href="./sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./cicd/">OverView</a>
+          <a href="./cicd/anthos.html">Anthos</a>
+          <a href="./cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../frontend/prism.js"></script>
+<script src="../script/script.js"></script>
+
+  </body>
+</html>

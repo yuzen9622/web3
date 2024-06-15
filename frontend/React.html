@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="prism.css" />
+    <link rel="icon" href="../img/react.png" />
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/react-bg.gif);
+      }
+    </style>
+     <link rel="stylesheet" href="../style/style.RWD.css" />
+    <title>React</title>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="rwd">
+      <button id="bar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="rwd-ul">
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li id="rwd-li">
+          <a>Frontend Development </a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="./">Overview</a>
+              </li>
+              <li><a href="./HTML.html">HTML</a></li>
+              <li><a href="./CSS.html">CSS</a></li>
+              <li><a href="./JavaScript.html">Javascript</a></li>
+              <li><a href="./React.html">React</a></li>
+              <li><a href="./Angular.html">Angular</a></li>
+              <li><a href="./Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Backend Development</a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="../backend/">Overview</a>
+              </li>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Database Management</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/">Overview</a></li>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>CI/CD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/">Overview</a></li>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul>
+      <li>
+        <a href="../">Home</a>
+      </li>
+      <li>
+        <a href="./">Frontend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="./HTML.html">HTML</a></li>
+            <li><a href="./CSS.html">CSS</a></li>
+            <li><a href="./JavaScript.html">Javascript</a></li>
+            <li><a href="./React.html">React</a></li>
+            <li><a href="./Angular.html">Angular</a></li>
+            <li><a href="./Vue.html">Vue</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/">Backend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/nodejs.html">Node.js</a></li>
+            <li><a href="../backend/java.html">Java</a></li>
+            <li><a href="../backend/php.html">PHP</a></li>
+            <li><a href="../backend/express.html">Express.js</a></li>
+            <li><a href="../backend/spring.html">Spring</a></li>
+            <li><a href="../backend/laravel.html">Laravel</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/sql/">SQL</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+            <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/cicd/">CICD</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+            <li><a href="../backend/cicd/github.html">Github</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1">
+              <a href="#title1">Hello React</a>
+            </li>
+            <li class="li2">
+              <a href="#title2">React 如何使用 JavaScript？? </a>
+            </li>
+            <li class="li3">
+              <a href="#title3">設置你的第一個 React 應用程式 </a>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">Hello React</h2>
+
+            <p>
+              React是一個用來建構使用者介面的函式庫。React 不是框架——它甚至不是
+              web
+              獨有的開發技術，它可以和其他函式庫或套件搭配使用，以在特定環境中渲染。例如，React
+              Native可用來建立手機應用程式；React 360可以用來建立 VR
+              應用程式；除此之外還有很多的可能性。
+            </p>
+            <br />
+            <p>
+              為了要建構 web，開發者將 React 與ReactDOM搭配使用。React 與
+              ReactDOM 的組合經常與其他 web
+              開發框架相提並論——以用於解決相同的問題。當我們稱呼 React
+              為「框架（framework）」時，我們是使用口語化的理解好加以討論。
+            </p>
+            <br />
+
+            <p>
+              (使用)React 的主要目標是最大限度減少開發者建構 UI
+              介面時出現的錯誤。它通過使用元件——描述部分使用者界面且自成一體的邏輯與程式碼段落來實現這點。這些元件可以組合在一起以建立完整的
+              UI 界面，React 將大部分的渲染邏輯給抽象化出來，讓你可以專注於 UI
+              層的程式設計。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">React 如何使用 JavaScript？?</h2>
+
+            <p>
+              React 在許多設計模式中利用了現代 JavaScript 特性。它與 JavaScript
+              最大的區別在於使用JSX語法。JSX 擴展了 JavaScript
+              語法，以便能與類似 HTML 的程式碼並存。例如：
+            </p>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">const heading = &gt;h1&lt;Mozilla Developer Network&gt;/h1&lt;</code></pre>
+            </div>
+            <p>
+              這個 <code>heading</code>變數又稱為<strong
+                >JSX expression（JSX 表達式）</strong
+              >
+              。React 可以在我們的應用程式中使用它，以渲染顯示&lt;h1&gt;標籤
+            </p>
+            <p>
+              假如我們出於語義化的原因，想要將heading包裹在&lt;header&gt;標籤中，那該怎麼做呢？JSX
+              方法允許我們將元素互相嵌套，就像我們在使用 HTML 一樣：
+            </p>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">const header = (
+&lt;header&gt;
+  &lt;h1&gt;Mozilla Developer Network&lt;/h1&gt;
+&lt;/header&gt;);</code></pre>
+            </div>
+            <p>
+              當然，若沒有其他的幫助，你的瀏覽器是無法直接讀取解析 JSX
+              的，當編譯完成（藉由使用像Babel或Parcel之類的工具），我們的 header
+              表達式看起來像這樣：
+            </p>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">
+const header = React.createElement(
+  "header",
+   null,
+  React.createElement("h1", null, "Mozilla Developer Network"),
+);
+              </code></pre>
+              
+            </div>
+            <p>
+              是可以跳過編譯階段，並使用React.createElement()來撰寫你自己的 UI
+              介面的。但是，這樣做會失去 JSX
+              的聲明性優勢，並且程式碼更難閱讀。雖然編譯是開發過程的額外步驟，但是許多
+              React 社群的開發者認為為了可讀性，使用 JSX
+              是值得的。此外，各種流行工具能使 JSX 到 JavaScript
+              的編譯成為其設置過程的一部分。除非你想，否則你不必自己配置編譯設定。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title3">設置你的第一個 React 應用程式</h2>
+            <p>
+              有很多方法可以使用 React，但我們將使用命令行界面（CLI）工具
+              create-react-app。如前面所說，它可以透過安裝一些套件和創建一些文件檔案以處理上面描述的工具，使其可以用來加速開發
+              React 應用程式的過程。
+            </p>
+
+            <p>環境要求</p>
+            <p>
+              為了使用create-react-app，你需要先安裝Node.js。建議你使用長期支援（LTS）版本。Node.js
+              包括 npm（Node.js 套件管理器）和 npx（Node.js 套件運行器）。
+            </p>
+            <p>
+              你也可以使用 Yarn
+              套件管理器作為替代方案，但我們假設你在這個教學中使用
+              npm。參閱Package management basics可取得有關 npm 和 yarn
+              的更多資訊。
+            </p>
+            <p>初始化你的應用程式</p>
+            <p>
+              <code>create-react-app</code
+              >需要一個參數：一個你給予應用程式的名字。create-react-app會使用該名稱建立一個新目錄，並在其中建立必要的文件檔案。確保你有cd到你希望該應用程式在你電腦硬碟裡的資料夾位置，然後在你電腦終端機
+              terminal 執行以下指令：
+            </p>
+            <div class="code">
+              <pre>Terminal</pre>
+              <hr />
+              <pre><code class="language-powershell">npx create-react-app moz-todo-react</code></pre>
+            </div>
+            <p>
+              此指令會建立一個名為moz-todo-react的資料夾目錄，並在其中做了幾件事：
+            </p>
+            <ul>
+              <li><p>安裝一些對 React 應用程式至關重要的 npm 套件。</p></li>
+              <li><p>編寫用來啟動 React 應用程式的腳本語言。</p></li>
+              <li><p>建立定義基本應用程式架構的文件和目錄結構。</p></li>
+              <li>
+                <p>
+                  如果你的電腦已有安裝 git 版控，則將該資料夾目錄初始化為 git
+                  存儲庫。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="./">Overview</a>
+          <a href="./HTML.html">HTML</a>
+          <a href="./CSS.html">CSS</a>
+          <a href="./JavaScript.html">Javascript</a>
+          <a href="./React.html">React</a>
+          <a href="./Angular.html">Angular</a>
+          <a href="./Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../backend/">Overview</a>
+          <a href="../backend/nodejs.html">Node.js</a>
+          <a href="../backend/java.html">Java</a>
+          <a href="../backend/php.html">PHP</a>
+          <a href="../backend/express.html">Express.js</a>
+          <a href="../backend/spring.html">Spring Boot</a>
+          <a href="../backend/laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="../backend/sql/">Overview</a>
+
+          <a href="../backend//sql/mysql.html">MySQL</a>
+          <a href="../backend/sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="../backend/cicd/">Overview</a>
+          <a href="../backend/cicd/anthos.html">Anthos</a>
+          <a href="../backend/cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="prism.js"></script>
+  </body>
+</html>

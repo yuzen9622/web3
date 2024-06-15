@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../img/laravel.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b61b5c8440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style.RWD.css" />
+    <title>Laravel</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/61_1.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../frontend/">Overview</a>
+                </li>
+                <li><a href="../frontend/HTML.html">HTML</a></li>
+                <li><a href="../frontend/CSS.html">CSS</a></li>
+                <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../frontend/React.html">React</a></li>
+                <li><a href="../frontend/Angular.html">Angular</a></li>
+                <li><a href="../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="./">Overview</a>
+                </li>
+                <li><a href="./nodejs.html">Node.js</a></li>
+                <li><a href="./java.html">Java</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./express.html">Express.js</a></li>
+                <li><a href="./spring.html">Spring</a></li>
+                <li><a href="./laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./sql/">Overview</a></li>
+                <li><a href="./sql/mysql.html">MySQL</a></li>
+                <li><a href="./sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./cicd/">Overview</a></li>
+                <li><a href="./cicd/anthos.html">Anthos</a></li>
+                <li><a href="./cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../frontend/HTML.html">HTML</a></li>
+              <li><a href="../frontend/CSS.html">CSS</a></li>
+              <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../frontend/React.html">React</a></li>
+              <li><a href="../frontend/Angular.html">Angular</a></li>
+              <li><a href="../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./sql/">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是Laravel</a></li>
+            <li class="li2"><a href="#title2">laraval路由</a></li>
+            <li class="li3"><a href="#title3">lavavel遷移檔</a></li>
+            <li>
+              <a href="https://laravel.com/" target="_blank">Laravel網站連結</a>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是Laravel</h2>
+            <p>
+              Laravel 是一個由Taylor Otwell所建立，自由開源的 PHP Web
+              框架，旨在實作的Web軟體的MVC架構，並作為CodeIgniter的替代方案。其原始碼代管於GitHub，許可條款為MIT授權條款。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">laraval路由</h2>
+            <p>
+              一開始，先創建第一個路由。<br />
+              在 Laravel 中，最簡單的路由是封閉性路由。打開 app/routes.php
+              檔案，並且增加下面的路由在檔案的最下方：
+            </p>
+            <p>
+              Route::get('users', function(){<br />
+              return 'Users!';<br />
+              });<br />
+            </p>
+            <p>
+              路由也可以指向一個控制器類別。例如：<br />
+              Route::get('users', 'UserController@getIndex');<br />
+              這個路由告訴框架 /users 路由的請求應該使用 UserController 類別的
+              getIndex 方法。<br />
+            </p>
+            <p>
+              建立視圖<br />
+              視圖以 HTML 代碼存放在 app/views 的目錄中。<br />
+              存放兩個視圖進目錄中： layout.blade.php 和 user.blade.php。<br />
+            </p>
+
+            首先，建立 layout.blade.php 檔案：
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php"> &lt;html&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
+ &lt;h1&gt;Laravel Quickstart&lt;/h1&gt;
+ @yield('content')
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+ &lt;/html&gt;</code></pre>
+            </div>
+
+            <p>接下來，建立 users.blade.php 視圖：</p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">@extends('layout')
+@section('content')
+Users!@stop</code></pre>
+            </div>
+            <p>改用視圖來替代顯示出 Users!：</p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">Route::get('users', function(){
+return View::make('users'); });</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title3">lavavel遷移檔</h2>
+            <p>
+              建立遷移檔<br />
+              首先，要設定資料庫連接。可以在 app/config/database.php
+              檔案配置所有的資料庫連接資訊。<br />
+              預設中，Laravel 使用
+              MySQL，所以必須將資料庫連接的機密資訊填入其中。<br />
+              也可以更改 driver 選項為 sqlite，如此他就會使用放置在 app/database
+              裡的 SQLite 資料庫。 接下來，創建遷移檔，我們使用 Artisan
+              CLI。在專案的根目錄下，在終端裡執行下列指令：<br />
+              php artisan migrate:make create_users_table<br />
+              然後，在 app/database/migrations
+              目錄下找到產生的遷移檔。檔案中有一個包含了兩個方法 up 和 down
+              的類別。<br />
+              在 up 方法中，你必須表明你要對你的資料表做哪些更動，而在 down
+              的方法裡，你只要回復這些更動。<br />
+            </p>
+            <p>定義一個遷移檔如下：</p>
+
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">public function up(){
+&nbsp;&nbsp;&nbsp;&nbsp;Schema::create('users',
+function($table){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$table->increments('id');
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$table->string('email')->unique();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$table->string('name');
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$table->timestamps();
+&nbsp;&nbsp;&nbsp;&nbsp;});
+}
+public function down(){
+&nbsp;&nbsp;&nbsp;&nbsp;Schema::drop('users');
+}</code></pre>
+            </div>
+
+            <p>
+              然後從終端裡透過 migrate
+              指令來執行遷移動作。在專案的根目錄裡執行下列指令：<br />
+              php artisan migrate<br />
+              如果你想回復遷移，你可以執行 migrate:rollback
+              指令。這樣就已經建好了資料表，可以開始放些資料進去。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../frontend/">Overview</a>
+          <a href="../frontend/HTML.html">HTML</a>
+          <a href="../frontend/CSS.html">CSS</a>
+          <a href="../frontend/JavaScript.html">Javascript</a>
+          <a href="../frontend/React.html">React</a>
+          <a href="../frontend/Angular.html">Angular</a>
+          <a href="../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="./">Overview</a>
+          <a href="./nodejs.html">Node.js</a>
+          <a href="./java.html">Java</a>
+          <a href="./php.html">PHP</a>
+          <a href="./express.html">Express.js</a>
+          <a href="./spring.html">Spring Boot</a>
+          <a href="./laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./sql/">OverView</a>
+
+          <a href="./sql/mysql.html">MySQL</a>
+          <a href="./sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./cicd/">OverView</a>
+          <a href="./cicd/anthos.html">Anthos</a>
+          <a href="./cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="../frontend/prism.js"></script>
+  </body>
+</html>

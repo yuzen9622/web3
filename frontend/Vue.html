@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b61b5c8440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="../img/Vue.png" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.RWD.css" />
+    <title>Vue</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/vue-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="rwd">
+      <button id="bar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="rwd-ul">
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li id="rwd-li">
+          <a>Frontend Development </a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="./">Overview</a>
+              </li>
+              <li><a href="./HTML.html">HTML</a></li>
+              <li><a href="./CSS.html">CSS</a></li>
+              <li><a href="./JavaScript.html">Javascript</a></li>
+              <li><a href="./React.html">React</a></li>
+              <li><a href="./Angular.html">Angular</a></li>
+              <li><a href="./Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Backend Development</a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="../backend/">Overview</a>
+              </li>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Database Management</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/">Overview</a></li>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>CI/CD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/">Overview</a></li>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul>
+      <li>
+        <a href="../">Home</a>
+      </li>
+      <li>
+        <a href="./">Frontend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="./HTML.html">HTML</a></li>
+            <li><a href="./CSS.html">CSS</a></li>
+            <li><a href="./JavaScript.html">Javascript</a></li>
+            <li><a href="./React.html">React</a></li>
+            <li><a href="./Angular.html">Angular</a></li>
+            <li><a href="./Vue.html">Vue</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/">Backend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/nodejs.html">Node.js</a></li>
+            <li><a href="../backend/java.html">Java</a></li>
+            <li><a href="../backend/php.html">PHP</a></li>
+            <li><a href="../backend/express.html">Express.js</a></li>
+            <li><a href="../backend/spring.html">Spring</a></li>
+            <li><a href="../backend/laravel.html">Laravel</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/sql/">SQL</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+            <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/cicd/">CICD</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+            <li><a href="../backend/cicd/github.html">Github</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1">
+              <a href="#title1">Hello Vue</a>
+            </li>
+            <li class="li2">
+              <a href="#title2">Vue 如何使用 JavaScript？</a>
+            </li>
+            <li class="li3">
+              <a href="#title3">設置你的第一個 Vue 應用程式</a>
+            </li>
+            <li class="li4">
+              <a href="#title4">深入了解 Vue 特性</a>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">Hello Vue</h2>
+
+            <p>
+              Vue是一個漸進式的JavaScript框架，主要用於構建用戶界面。它由尤雨溪創建並開源，設計理念是易於集成和逐步採用。Vue的核心庫專注於視圖層，並且易於與其他庫或現有項目集成。同時，Vue的生態系統也支持完整的應用框架能力，例如Vue
+              Router和Vuex。
+            </p>
+            <br />
+            <p>
+              Vue的目標是通過簡單、靈活和高性能的設計來提高開發效率。它利用響應式數據綁定和組件系統，使得構建用戶界面變得直觀且高效。
+            </p>
+            <br />
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">Vue 如何使用 JavaScript？</h2>
+
+            <p>
+              Vue使用現代JavaScript功能來構建其響應式系統。Vue的核心是其雙向數據綁定系統，它允許開發者定義和操作數據，並自動將數據變更反映到DOM中。以下是一個簡單的Vue元件示例：
+            </p>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">const app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!'
+      }
+    });</code></pre>
+            </div>
+            <p>
+              上述代碼中，我們創建了一個新的Vue實例。<code>el</code>屬性指定了Vue實例要控制的DOM元素，<code>data</code>屬性包含了應用的數據。在HTML模板中，我們可以使用Mustache語法來綁定和顯示數據：
+            </p>
+            <div class="code">
+              <pre>HTML</pre>
+              <hr />
+              <pre><code class="language-html"> {{ message }}</code></pre>
+            </div>
+            <p>
+              當Vue實例創建後，<code>#app</code>元素內的<code
+                >{{ message }}</code
+              >將被渲染為<code>Hello Vue!</code>。
+            </p>
+            <p>
+              Vue的組件系統允許開發者構建可重用的UI組件。以下是一個簡單的Vue組件示例：
+            </p>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">Vue.component('todo-item', {
+      props: ['todo'],
+      template: '<li>{{ todo.text }}</li>'
+    });
+    
+    const app = new Vue({
+      el: '#app',
+      data: {
+        groceryList: [
+          { id: 0, text: 'Vegetables' },
+          { id: 1, text: 'Cheese' },
+          { id: 2, text: 'Whatever else humans are supposed to eat' }
+        ]
+      }
+    });</code></pre>
+            </div>
+            <p>
+              上述代碼中，我們定義了一個名為<code>todo-item</code>的組件，並在<code>groceryList</code>數據中使用它來渲染一個待辦事項列表。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title3">設置你的第一個 Vue 應用程式</h2>
+            <p>
+              要開始使用Vue，你可以通過多種方式來創建Vue應用程式。最簡單的方法是使用Vue
+              CLI，這是一個強大的命令行工具，可以幫助你快速創建和管理Vue項目。
+            </p>
+
+            <p>環境要求</p>
+            <p>
+              在使用Vue
+              CLI之前，你需要先安裝Node.js和npm（Node.js的套件管理器）。建議你使用Node.js的長期支援（LTS）版本。
+            </p>
+            <p>初始化你的應用程式</p>
+            <p>要創建一個新的Vue應用程式，請在終端機中運行以下命令：</p>
+            <div class="code">
+              <pre>Terminal</pre>
+              <hr />
+              <pre><code class="language-powershell">npm install -g @vue/cli
+    vue create my-vue-app</code></pre>
+            </div>
+            <p>
+              此命令將創建一個名為<code>my-vue-app</code>的目錄，並在其中生成Vue應用程式的基本結構，包括必要的文件和目錄。
+            </p>
+            <p>然後，進入該目錄並啟動開發服務器：</p>
+            <div class="code">
+              <pre>Terminal</pre>
+              <hr />
+              <pre><code class="language-powershell">cd my-vue-app
+    npm run serve</code></pre>
+            </div>
+            <p>
+              這將啟動開發服務器，並在<code>http://localhost:8080</code>上運行你的應用程式。現在，你可以在瀏覽器中訪問該地址來查看你的第一個Vue應用程式。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title4">深入了解 Vue 特性</h2>
+            <p>
+              Vue 提供了許多強大的特性來簡化和加速開發過程。以下是一些關鍵特性：
+            </p>
+            <ul>
+              <li>
+                <strong>響應式數據綁定：</strong
+                >允許數據模型和視圖之間的自動同步，確保它們始終保持一致。
+              </li>
+              <li>
+                <strong>指令：</strong
+                >指令是用來操作DOM的特殊標記。常見的指令包括<code>v-if</code>和<code>v-for</code>。
+              </li>
+              <li>
+                <strong>組件系統：</strong
+                >Vue的組件系統允許開發者構建可重用的UI組件，從而提高代碼的可維護性和可重用性。
+              </li>
+              <li>
+                <strong>單文件組件 (SFC)：</strong
+                >Vue允許將HTML、JavaScript和CSS整合到一個單文件組件中，這使得開發和維護變得更加方便。
+              </li>
+              <li>
+                <strong>過渡效果：</strong
+                >Vue提供了內建的過渡效果系統，允許你在元素進入和離開DOM時添加動畫效果。
+              </li>
+              <li>
+                <strong>插件系統：</strong
+                >Vue的插件系統允許你擴展應用程式的功能，常見插件包括Vue
+                Router和Vuex。
+              </li>
+              <li>
+                <strong>生態系統：</strong
+                >Vue擁有豐富的生態系統，包括官方和第三方的插件和工具，這使得開發和擴展應用程式變得更加容易。
+              </li>
+            </ul>
+            <p>
+              這些特性使得Vue成為開發直觀且高效的Web應用程式的強大工具。通過學習和應用這些特性，你可以顯著提高開發效率和應用程式的可維護性。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="./">Overview</a>
+          <a href="./HTML.html">HTML</a>
+          <a href="./CSS.html">CSS</a>
+          <a href="./JavaScript.html">Javascript</a>
+          <a href="./React.html">React</a>
+          <a href="./Angular.html">Angular</a>
+          <a href="./Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../backend/">Overview</a>
+          <a href="../backend/nodejs.html">Node.js</a>
+          <a href="../backend/java.html">Java</a>
+          <a href="../backend/php.html">PHP</a>
+          <a href="../backend/express.html">Express.js</a>
+          <a href="../backend/spring.html">Spring Boot</a>
+          <a href="../backend/laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="../backend/sql/">Overview</a>
+
+          <a href="../backend//sql/mysql.html">MySQL</a>
+          <a href="../backend/sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="../backend/cicd/">Overview</a>
+          <a href="../backend/cicd/anthos.html">Anthos</a>
+          <a href="../backend/cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="../frontend/prism.js"></script>
+  </body>
+</html>

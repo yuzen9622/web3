@@ -1,0 +1,160 @@
+:root {
+    --sky-blue: #46A3FF;
+    --dark-color: #3C3C3C;
+    --skin-color: #FFD1A4;
+    --dark-blue: #005AB5;
+}
+
+
+.code {
+    background-color: var(--dark-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 70%;
+    box-shadow: var(--skin-color) 0 0 3px;
+}
+
+.code hr {
+    color: var(--skin-color);
+}
+
+ul {
+    margin-left: 40px;
+}
+
+ol {
+    font-size: 1.2rem;
+}
+
+ol ul li {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1em;
+}
+
+.example {
+    margin-top: 10px;
+    width:100%;
+   
+    padding: 10px;
+    background-color: var(--dark-color);
+    box-shadow: var(--skin-color) 0 0 3px;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--dark-blue);
+    z-index: 2;
+
+}
+
+.navbar img {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+.navbar ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.navbar li {
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    cursor: default;
+    
+    font-size: 20px;
+    margin: 0 5px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.navbar li:hover {
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.navbar a {
+    padding: 10px;
+    color: var(--skin-color);
+    text-decoration: none;
+}
+
+.navbar li:hover>a {
+    color: var(--dark-color);
+}
+
+.navbar li:hover .drop {
+    
+    visibility: visible;
+    opacity: 1;
+  transform: scaleX(1)
+
+}
+
+.drop {
+   
+   visibility: hidden;
+    position: absolute;
+    width: auto;
+    border-radius: 5px;
+    border: 0.5px solid white;
+    background-color: var(--dark-blue);
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transform:scaleX(0.8);
+    transition: transform 0.1s,visibility 0s;
+}
+
+.drop ul {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin: 0 5px;
+}
+
+.drop li {
+    display: flex;
+    justify-content: center;
+ margin: 5px;
+    width: 100%;
+}
+
+.drop li:hover a {
+    color: var(--dark-color);
+}
+
+.drop li a,.navbar li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--skin-color);
+}
+table{
+    border: 2px solid var(--skin-color);
+}
+table tr:nth-child(2n){
+    background-color: var(--sky-blue);
+   color: var(--dark-color);
+}
+table tr:nth-child(2n-1){
+    background-color: var(--dark-blue);
+   color: var(--skin-color);
+}
+table td{
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+}

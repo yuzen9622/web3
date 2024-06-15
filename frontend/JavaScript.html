@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../img/JS.png" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="prism.css" />
+ 
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/js-bg.gif);
+      }
+    </style>
+    <title>JS</title>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="rwd">
+      <button id="bar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="rwd-ul">
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li id="rwd-li">
+          <a>Frontend Development </a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="./">Overview</a>
+              </li>
+              <li><a href="./HTML.html">HTML</a></li>
+              <li><a href="./CSS.html">CSS</a></li>
+              <li><a href="./JavaScript.html">Javascript</a></li>
+              <li><a href="./React.html">React</a></li>
+              <li><a href="./Angular.html">Angular</a></li>
+              <li><a href="./Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Backend Development</a>
+          <div class="drop">
+            <ul>
+              <li>
+                <a href="../backend/">Overview</a>
+              </li>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>Database Management</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/">Overview</a></li>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="rwd-li">
+          <a>CI/CD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/">Overview</a></li>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul>
+      <li>
+        <a href="../">Home</a>
+      </li>
+      <li>
+        <a href="./">Frontend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="./HTML.html">HTML</a></li>
+            <li><a href="./CSS.html">CSS</a></li>
+            <li><a href="./JavaScript.html">Javascript</a></li>
+            <li><a href="./React.html">React</a></li>
+            <li><a href="./Angular.html">Angular</a></li>
+            <li><a href="./Vue.html">Vue</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/">Backend</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/nodejs.html">Node.js</a></li>
+            <li><a href="../backend/java.html">Java</a></li>
+            <li><a href="../backend/php.html">PHP</a></li>
+            <li><a href="../backend/express.html">Express.js</a></li>
+            <li><a href="../backend/spring.html">Spring</a></li>
+            <li><a href="../backend/laravel.html">Laravel</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/sql/">SQL</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+            <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../backend/cicd/">CICD</a>
+        <div class="drop">
+          <ul>
+            <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+            <li><a href="../backend/cicd/github.html">Github</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1">
+              <a href="#title1">JavaScript — 動態的客戶端指令</a>
+            </li>
+            <li class="li2"><a href="#title2">它究竟可以做什麼呢? </a></li>
+            <li class="li3">
+              <a href="#title3">JavaScript 頁面做了些什麼？ </a>
+            </li>
+            <li class="li4"><a href="#title4">JavaScript 的執行順序 </a></li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">JavaScript — 動態的客戶端指令</h2>
+
+            <p>
+              JavaScript
+              程式語言可讓你在網頁上建構複雜的事物。當網頁不僅僅呆板呈現給你靜態的內容（像是即時的內容更新，互動式地圖、2D/3D
+              動畫、滑鼠操控影片播放…等等），你可以大膽猜測 JavaScript
+              已經參與其中。
+            </p>
+            <br />
+            <p>
+              JavaScript
+              是一種腳本，也能稱它為程式語言，可以讓你在網頁中實現出複雜的功能。當網頁不只呈現靜態的內容，另外提供了像是：內容即時更新、地圖交動、繪製
+              2D/3D 圖形，影片播放控制……等，你就可以大膽地認為 JavaScript
+              已經參與其中。它是標準網頁技術蛋糕的第三層，而其他兩層（HTML 和
+              CSS）我們在其他學習單元中有更多詳細的介紹。
+            </p>
+            <br />
+            <ul>
+              <li>
+                <p>
+                  HTML 是一種標記語言，我們使用它組織網頁裡的內容並給予定義，
+                  例如：定義段落、標題、資料表格，或是在頁面嵌入圖片和影片。.
+                </p>
+              </li>
+              <li>
+                <p>
+                  CSS 是一種樣式規則的語言，用來幫我們的 HTML
+                  內容上套用樣式，例如：設置背景顏色、字型，或讓內容以多欄的方式呈現。
+                </p>
+              </li>
+              <li>
+                <p>
+                  JavaScript
+                  是一種腳本語言，它使你能夠動態的更新內容、控制多媒體、動畫……幾乎所有事。（好吧，不是所有事情，但神奇的是你可以通過短短幾行
+                  JavaScript 程式碼實現。）
+                </p>
+              </li>
+            </ul>
+            <p>
+              這三層很好的構建在一起。讓我們以一個簡單的文字為例。我們可以使用
+              HTML 標記來表示它的結構和意圖：
+            </p>
+            <div class="code">
+              <pre>HTML</pre>
+              <hr />
+              <pre><code class="language-html">&lt;p&gt;Player 1: Chris&lt;/p&gt;</code></pre>
+            </div>
+            <p>加入JavaScript 來作出互動的行為：</p>
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="lang-js"> 
+const para = document.querySelector("#example");
+
+para.addEventListener("click", updateName);
+
+function updateName() {
+  let name = prompt("輸入新的名字");
+  para.textContent = "Player 1: " + name;
+}
+                </code></pre>
+            </div>
+            <p>下面為事例圖:</p>
+            <div class="example">
+              <button id="example">Player 1: Chris</button>
+             
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title2">它究竟可以做什麼呢?</h2>
+
+            <p>JavaScript 語言的核心包含了很多常用的程式功能供你使用，如：</p>
+            <ul>
+              <li>
+                <p>
+                  將有用的值存儲在變數中。例如上述例子，我們要求輸入一個新名字，然後將該名字存在名為name的變數裡。
+                </p>
+              </li>
+              <li>
+                <p>
+                  對文本片段的操作（在程式裡稱作"字串"）。在上述例子中，我們拿了字串
+                  "Player 1: " 並將其與 name
+                  變數連接來創造完整文本標籤，如：''Player 1: Chris"。
+                </p>
+              </li>
+              <li>
+                <p>
+                  執行程式碼，回應網頁上發生的某些事件。在上述例子中，我們使用
+                  click 事件，當按鈕被點擊時，便執行更新文本標籤的程式碼。
+                </p>
+              </li>
+              <li><p>以及其他更多更多的功能！</p></li>
+            </ul>
+            <p>
+              然而，更令人興奮的是那些基於用戶端的 JavaScript
+              語言構建的功能。也就是所謂的 應用程式介面（API），提供 JavaScript
+              程式額外的超能力。
+            </p>
+            <p>
+              API
+              是預先製作完成的程式模組，支援開發者實現困難或無法實現的功能。在程式設計中就如同在建築房子的時候使用系統傢俱，拿預先裁好的板子用螺絲鎖上來組合成書架，相比從頭自己設計，找合適木材，切成正確的形狀和尺寸，再找到合適的螺絲最後組裝書架而言更簡單。
+            </p>
+            <p>他們通常分為兩類。</p>
+            <img src="../img/api.png" width="100%" alt="" />
+            <p>
+              瀏覽器 API（Browser
+              API）內建在你的瀏覽器中，能夠依本地的電腦環境輸出資料或實現複雜的功能。舉例而言：
+            </p>
+            <ul>
+              <li>
+                <p>
+                  DOM （文件物件模型） API 讓你能操作 HTML 和
+                  CSS，像是建立、移除或改變 HTML
+                  元素，或動態地將新樣式套用到頁面…等等。每當你看到彈出視窗，或有新的內容出現在畫面上（就像上面的範例所展示的），那就是
+                  DOM 在動作。
+                </p>
+              </li>
+              <li>
+                <p>
+                  Geolocations（地理位置） API 可以取得位置資訊。這就是 Google
+                  Maps 取得你的位置並標示在地圖上所透過的方式。
+                </p>
+              </li>
+              <li>
+                <p>
+                  Canvas 和 WebGL API 可以讓你在網頁創造 2D 動畫及 3D
+                  圖像。人們正使用這些技術來作一些令人驚奇的事，參見 Chrome
+                  Experiments 及 webglsamples.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Audio 和 Video API 像 HTMLMediaElement 和 WebRTC
+                  一樣讓你可以使用多媒體做真正有趣的事情，例如在網頁中播放音樂或影片，或由網路攝影機頡取你的影像顯示在另一個人電腦裡（試試我們的簡單例子來了解）。
+                </p>
+              </li>
+            </ul>
+            <p>
+              第三方 API
+              預設不內建在瀏覽器裡，你通常由網路上取得他們的程式碼與資訊。例如：
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <a href="https://developer.x.com/en/docs" target="_blank">Twitter API</a>
+                  能讓你做很多w事，像是顯示最新的 Twitter 貼文在你的網站上。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://developers.google.com/maps/"
+                  target="_blank"
+                    >Google Maps API</a
+                  >
+                  能讓你在自己的網站中嵌入訂製的地圖或其他相關功能。
+                </p>
+              </li>
+            </ul>
+            <div class="example">
+               <h1>氣象API</h1>
+              <input type="text"  name="" id="inputTxt" placeholder="臺中市">
+              <button id="inputBtn">搜尋</button>
+              <p id="location"></p>
+              <p id="time"></p>
+              <p id="tem"></p>
+             
+<p id="wx"></p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title3">JavaScript 頁面做了些什麼？</h2>
+            <p>
+              簡單回顧一下當瀏覽器載入一個網站時會發生的事情（第一次是在我們的CSS
+              如何工作章節中提到）。當瀏覽器載入一個網頁，就是在執行環境（瀏覽器分頁）中執行程式碼（HTML，CSS
+              和
+              JavaScript）。就像是工廠收集原料（程式碼）並且產出商品（網頁呈現的結果）。
+            </p>
+            <img
+              src="https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/First_steps/What_is_JavaScript/execution.png"
+              width="100%"
+              alt=""
+            />
+            <p>
+              透過 DOM API （上面提到的）動態調整 HTML 與 CSS
+              進行改變網頁呈現，在 JavaScript
+              是很常見的使用方式。要注意的是，檔案中的程式碼通常會以出現在頁面上的順序來執行。如果
+              JavaScript 比準備操作的 HTML 、 CSS
+              更早被載入，就可能會發生錯誤。你將會在這個章節的後段學到一些解決問題的方法，它在腳本載入策略的部分。
+            </p>
+            <p>瀏覽器安全性</p>
+            <p>
+              瀏覽器的每個分頁有獨立的空間來執行程式碼（技術上稱「執行環境
+              excution
+              environments」），這表示在絕大部分的情形之下，每個分頁的程式碼是獨立運行的，不能直接影響其它分頁（或網站）裡的程式。這是一個好的安全措施，少了它，有心人會開始寫程式來偷取網站的資料，或是作其它不好的事情。
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title4">JavaScript 的執行順序</h2>
+            <p>
+              當瀏覽器遇到一段 JavaScript
+              程式碼，通常會由上到下執行。這意味著你需要注意東西擺放的順序。為了說明，讓我們回到我們曾看過的第一個範例：
+            </p>
+
+            <div class="code">
+              <pre>JS</pre>
+              <hr />
+              <pre><code class="language-js">
+const para = document.querySelector("p");
+
+para.addEventListener("click", updateName);
+                
+function updateName() {
+  let name = prompt("輸入新的名字");
+  para.textContent = "Player 1: " + name;
+}                
+                  </code></pre>
+            </div>
+            <p>
+              這裡我們選擇了一個文字段落（第 1
+              行），然後加上事件偵聽器，所以當段落被點擊的時候，updateName()
+              程式區塊（5 到 8 行 ）會被執行。updateName()
+              程式區塊（這種可以重複使用的程式區塊被稱為「函數
+              function」）會向使用者要一個新的名字，然後將插到段落中，更新顯示的內容。
+            </p>
+            <p>
+              如果你交換前兩行的程式碼，它將不再正常運作。取而代之的，瀏覽器開發主控台會回報一個錯誤訊息：「TypeError:
+              para is undefined」，意思是 para
+              物件尚不存在，所以我們在它上頭增加事件偵聽器。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="./">Overview</a>
+          <a href="./HTML.html">HTML</a>
+          <a href="./CSS.html">CSS</a>
+          <a href="./JavaScript.html">Javascript</a>
+          <a href="./React.html">React</a>
+          <a href="./Angular.html">Angular</a>
+          <a href="./Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../backend/">Overview</a>
+          <a href="../backend/nodejs.html">Node.js</a>
+          <a href="../backend/java.html">Java</a>
+          <a href="../backend/php.html">PHP</a>
+          <a href="../backend/express.html">Express.js</a>
+          <a href="../backend/spring.html">Spring Boot</a>
+          <a href="../backend/laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="../backend/sql/">Overview</a>
+
+          <a href="../backend//sql/mysql.html">MySQL</a>
+          <a href="../backend/sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="../backend/cicd/">Overview</a>
+          <a href="../backend/cicd/anthos.html">Anthos</a>
+          <a href="../backend/cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+      <script>
+        let query=document.querySelector('#inputTxt');
+        let button=document.querySelector("#inputBtn");
+        let time=document.querySelector('#time');
+        let temputure=document.querySelector('#tem')
+        let locationel=document.querySelector('#location')
+        let paramsName=document.querySelector("#wx")
+        console.log(button)
+        button.addEventListener('click',async()=>{
+          try {
+            const res=await fetch(`https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-751D24F0-D79C-41B7-80EF-94428EC62091&locationName=${query.value}`);
+            const datas= await res.json();
+            const data=datas.records.location[0].weatherElement[0].time[0]
+            if(datas.success=="true"){
+              time.innerHTML=`起始時間:${data.startTime}~結束時間:${data.endTime}`
+              temputure.innerHTML=`最低:${datas.records.location[0].weatherElement[2].time[0].parameter.parameterName}度,最高:${datas.records.location[0].weatherElement[4].time[0].parameter.parameterName}度`
+              paramsName.innerHTML=data.parameter.parameterName;
+            }else{
+              locationel.innerHTML="找不到縣市!"
+            }
+     
+
+          } catch (error) {
+            console.error(error)
+          }
+      
+        })
+        const para = document.querySelector("#example");
+para.addEventListener("click", updateName);
+
+function updateName() {
+  let name = prompt("輸入新的名字");
+  para.textContent = "Player 1: " + name;
+}
+      </script>
+    <script src="prism.js"></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

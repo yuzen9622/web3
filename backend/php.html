@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+    <link rel="icon" href="../img/php.png" />
+    <script
+      src="https://kit.fontawesome.com/b61b5c8440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/php-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../frontend/">Overview</a>
+                </li>
+                <li><a href="../frontend/HTML.html">HTML</a></li>
+                <li><a href="../frontend/CSS.html">CSS</a></li>
+                <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../frontend/React.html">React</a></li>
+                <li><a href="../frontend/Angular.html">Angular</a></li>
+                <li><a href="../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="./">Overview</a>
+                </li>
+                <li><a href="./nodejs.html">Node.js</a></li>
+                <li><a href="./java.html">Java</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./express.html">Express.js</a></li>
+                <li><a href="./spring.html">Spring</a></li>
+                <li><a href="./laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./sql/">Overview</a></li>
+                <li><a href="./sql/mysql.html">MySQL</a></li>
+                <li><a href="./sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./cicd/">Overview</a></li>
+                <li><a href="./cicd/anthos.html">Anthos</a></li>
+                <li><a href="./cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../frontend/HTML.html">HTML</a></li>
+              <li><a href="../frontend/CSS.html">CSS</a></li>
+              <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../frontend/React.html">React</a></li>
+              <li><a href="../frontend/Angular.html">Angular</a></li>
+              <li><a href="../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./sql/">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是PHP</a></li>
+            <li class="li2"><a href="#title2">PHP語法介紹</a></li>
+            <li class="li3"><a href="#title3">PHPの函式庫</a></li>
+            <li>
+              <a href="https://www.php.net/" target="_blank">PHP網站連結</a>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是PHP</h2>
+            <p>
+              PHP（全稱：PHP: Hypertext
+              Preprocessor，即「PHP：超文字預處理器」）是一種開源的通用電腦手稿語言，尤其適用於網路開發並可嵌入HTML中使用。
+              語法借鑑吸收C語言、Java和Perl等流行電腦語言的特點，易於一般程式設計師學習。PHP的主要目標是允許網路開發人員快速編寫動態頁面，但PHP也被用於其他很多領域。
+            </p>
+            <p>
+              PHP原本的全稱為Personal Home
+              Page，是拉斯姆斯·勒多夫為了要維護個人網頁，而用C語言開發的一些CGI工具程式集，來取代原先使用的Perl程式。
+              最初這些工具程式用來顯示拉斯姆斯·勒多夫的個人履歷，以及統計網頁流量。
+              他將這些程式和一些表單直譯器整合起來，稱為PHP/FI。PHP/FI可以和資料庫連接，產生簡單的動態網頁程式。
+            </p>
+            <p>
+              在1997年，任職於Technion IIT公司的兩個以色列程式設計師：Zeev
+              Suraski和Andi Gutmans，重寫了PHP的剖析器，成為PHP
+              3的基礎，而PHP也在這個時候改稱為PHP: Hypertext Preprocessor.。
+            </p>
+            <div>
+              <h2>PHP的吉祥物</h2>
+              <div class="img-article">
+                <div class="img-p">
+                  <img
+                    src="../img/elePHPant.jpeg"
+                    alt=""
+                    height="300px"
+                    width="450px"
+                  />
+                </div>
+              </div>
+              <br />
+              PHP計畫的吉祥物名叫「elePHPant」，PHP的logo在一頭藍象的裡面，由文森·龐蒂爾(Vincent
+              Pontier)在1998年設計。其設計概念是從側面看 PHP 像隻大象
+            </div>
+            <br /><br />
+            <h2>PHP創始相關人物</h2>
+            <div class="img-article">
+              <div class="img-p">
+                <img
+                  src="../img/拉斯姆斯·勒多夫.jpg"
+                  alt=""
+                  height="400px"
+                  width="450px"
+                />
+                <h2>拉斯姆斯·勒多夫</h2>
+              </div>
+              <div class="img-p">
+                <img
+                  src="../img/Andi Gutmans.jpg"
+                  alt=""
+                  height="400px"
+                  width="450px"
+                />
+                <h2>Andi Gutmans</h2>
+              </div>
+              <div class="img-p">
+                <img
+                  src="../img/Zeev Suraski.jpg"
+                  alt=""
+                  height="400px"
+                  width="450px"
+                />
+                <h2>Zeev Suraski</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title2">PHP語法介紹</h2>
+            <h4>
+              PHP的語法參考了Perl、C語言，而且可以整合在HTML之中，以下是一個簡單的Hello
+              World程式碼：
+            </h4>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">&lt;?= 'Hello World!'; ?&gt;</code></pre>
+            </div>
+
+            <p>
+              PHP剖析引擎只剖析<code class="language-php">&lt;?php到?&gt;</code
+              >之間的程式碼，而不包含在&lt;?php到?&gt;之間的內容則會直接送出，所以可以用以下的方式來將PHP程式碼嵌入在HTML之中：
+            </p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">  &lt;?php //-PHP-{zh-hans:代码;zh-hant:程式碼：}- ?&gt; html內容
+&lt;?php //-PHP-{zh-hans:代码;zh-hant:程式碼：}- ?&gt;</code></pre>
+            </div>
+
+            <p>
+              在HTML中嵌入PHP時，比如需要單獨輸出某個變數，除了正常採用 echo
+              方式外，也可以直接採用下列方式：
+            </p>
+            <p></p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">&lt;?=$title?&gt;</code></pre>
+            </div>
+
+            <p>在判斷語句中的HTML代碼並不會被直接送出：</p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">&lt;?php if (false) { ?&gt; HTML Code &lt;?php } ?&gt;</code></pre>
+            </div>
+
+            <p>
+              PHP可以用三種註解的形式：C與C++所使用的「/*...*/」與「//」，和Perl的「#」。
+            </p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php"> &lt;?php /* 多行註解的第一行 多行註解的另一行 */ // 單行註解 #單行註解 ?&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title3">PHPの函式庫</h2>
+            <p>
+              PHP標準函式庫（Standard PHP
+              Library，縮寫：SPL），是PHP5.0之後新添加的重要函式庫。它提供了一系列的介面（interface）和類別（classes）解決網站開發中普遍碰到的問題。原始碼在ext/spl目錄下。
+            </p>
+            <p>
+              除了內建的函式之外，PHP也提供了很多延伸函式庫（extension），像是各種資料庫連接函式、資料壓縮函式、圖形處理等等。有些延伸函式庫需要從PECL（PHP
+              Extension Community Library）取得。
+            </p>
+            <p>SPL主要提供了以下幾個方面的內容：</p>
+            <ul>
+              <li>
+                <p>
+                  iterator：迭代器，這是SPL中最重要的內容。它提供了一系列的介面和內建迭代器類別。
+                </p>
+              </li>
+              <li>
+                <p>exception：異常類別，它聲明一了組和C++標準的異常類別。</p>
+              </li>
+              <li>
+                <p>Observer：觀察者模式，觀察者模式在MVC中經常用到。</p>
+              </li>
+              <li>
+                <p>以及一些單體函式。</p>
+              </li>
+            </ul>
+            <p>SPL主要的類別:</p>
+            <ul>
+              <li>
+                <p>
+                  DirectoryIterator：這個類別用來檢視一個目錄中的所有檔案和子目錄。
+                </p>
+              </li>
+              <li>
+                <p>
+                  FilterIterator：這是一個抽象類別，它實現了OuterIterator介面。它包裝一個已有的迭代器類別，通過抽象方法accept()過濾掉不需要的內容，形成一個新的迭代器。
+                </p>
+              </li>
+              <li>
+                <p>
+                  LimitIterator：這也是一個實現OuterIterator的類別。它有點類似於SQL中的LIMIT語句。它通過包裝一個已有迭代器，然後截取其中某一段資料形成一個新的迭代器。
+                </p>
+              </li>
+              <li>
+                <p>
+                  RecursiveDirectoryIterator：遞迴檢視一個目錄中的所有檔案的子目錄。
+                </p>
+              </li>
+              <li>
+                <p>SimpleXMLIterator：一個遍歷XML內容的類別</p>
+              </li>
+              <li>
+                <p>
+                  IteratorIterator：實現對迭代器的包裝，這也是SPL中對OuterIterator預設實現。
+                </p>
+              </li>
+              <li>
+                <p>
+                  InfiniteIterator：從字面意思就知道，這是個無限迴圈的迭代器，當next()到達最後時，會自動呼叫rewind()函式，又從頭開始。
+                </p>
+              </li>
+              <li>
+                <p>
+                  AppendIterator：它實現了對一系統迭代器的包裝，並且可以在執行過程中添加新的迭代器。
+                </p>
+              </li>
+              <li>
+                <p>
+                  SplFileInfo：取得檔案資訊類別。SplFileObject從該類別繼承。
+                </p>
+              </li>
+              <li>
+                <p>
+                  SplFileObject：檔案操作類別，可以按行的方式遍歷檔案內容。同時還能取得檔案的大小及其它詳細資訊。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../frontend/">Overview</a>
+          <a href="../frontend/HTML.html">HTML</a>
+          <a href="../frontend/CSS.html">CSS</a>
+          <a href="../frontend/JavaScript.html">Javascript</a>
+          <a href="../frontend/React.html">React</a>
+          <a href="../frontend/Angular.html">Angular</a>
+          <a href="../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="./">Overview</a>
+          <a href="./nodejs.html">Node.js</a>
+          <a href="./java.html">Java</a>
+          <a href="./php.html">PHP</a>
+          <a href="./express.html">Express.js</a>
+          <a href="./spring.html">Spring Boot</a>
+          <a href="./laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./sql/">OverView</a>
+
+          <a href="./sql/mysql.html">MySQL</a>
+          <a href="./sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./cicd/">OverView</a>
+          <a href="./cicd/anthos.html">Anthos</a>
+          <a href="./cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../script/script.js"></script>
+    <script src="../frontend/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../img/mysql.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="../../frontend/prism.css" />
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MySQL</title>
+    <style>
+      header {
+        width: 100%;
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../img/vidoes/mysql-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../../frontend/">Overview</a>
+                </li>
+                <li><a href="../../frontend/HTML.html">HTML</a></li>
+                <li><a href="../../frontend/CSS.html">CSS</a></li>
+                <li><a href="../../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../../frontend/React.html">React</a></li>
+                <li><a href="../../frontend/Angular.html">Angular</a></li>
+                <li><a href="../../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../">Overview</a>
+                </li>
+                <li><a href="../nodejs.html">Node.js</a></li>
+                <li><a href="../java.html">Java</a></li>
+                <li><a href="../php.html">PHP</a></li>
+                <li><a href="../express.html">Express.js</a></li>
+                <li><a href="../spring.html">Spring</a></li>
+                <li><a href="../laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./">Overview</a></li>
+                <li><a href="./mysql.html">MySQL</a></li>
+                <li><a href="./mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="../cicd/">Overview</a></li>
+                <li><a href="../cicd/anthos.html">Anthos</a></li>
+                <li><a href="../cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../../frontend/HTML.html">HTML</a></li>
+              <li><a href="../../frontend/CSS.html">CSS</a></li>
+              <li><a href="../../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../../frontend/React.html">React</a></li>
+              <li><a href="../../frontend/Angular.html">Angular</a></li>
+              <li><a href="../../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../nodejs.html">Node.js</a></li>
+              <li><a href="../java.html">Java</a></li>
+              <li><a href="../php.html">PHP</a></li>
+              <li><a href="../express.html">Express.js</a></li>
+              <li><a href="../spring.html">Spring</a></li>
+              <li><a href="../laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="./mysql.html">MySQL</a></li>
+              <li><a href="./mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../cicd/anthos.html">Anthos</a></li>
+              <li><a href="../cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+        <div class="menu">
+          <p>目錄</p>
+          <ol start="1">
+            <li class="li1"><a href="#title1">什麼是MySQL</a></li>
+            <li class="li2"><a href="#title2">MySQLの歷史</a></li>
+            <li class="li3"><a href="#title3">MySQLの特性</a></li>
+            <li class="li4"><a href="#title4">MySQLの應用</a></li>
+            <li class="li5"><a href="#title5">MySQLの使用範例</a></li>
+            <li><a href="https://www.mysql.com/" target="_blank">MySQLの網站連結</a></li>
+          </ol>
+        </div>
+      </aside>
+      <div class="conatainer">
+        <section>
+          <div class="main-title">
+            <h2 id="title1">什麼是MySQL</h2>
+            <p>
+              原本是一個開放原始碼的關聯式資料庫管理系統，原開發者為瑞典的MySQL
+              AB公司，該公司於2008年被昇陽微系統（Sun Microsystems）收購。<br />
+              2009年，甲骨文公司（Oracle）收購昇陽微系統公司，MySQL成為Oracle旗下產品。<br />
+              MySQL在過去由於效能高、成本低、可靠性好，已經成為最流行的開源資料庫，因此被廣泛地應用在Internet上的中小型網站中。
+              隨著MySQL的不斷成熟，它也逐漸用於更多大規模網站和應用，比如維基百科、Google和Facebook等網站。<br />
+              非常流行的開源軟體組合LAMP中的「M」指的就是MySQL。
+            </p>
+            <div class="main-title">
+              <h2 id="title2">MySQLの歷史</h2>
+              <p>
+                2008年1月16日，Sun（昇陽電腦）正式收購MySQL。<br />
+                2009年4月20日，甲骨文公司宣布以每股9.50美元，74億美元的總額收購Sun電腦公司。<br />
+                2013年6月18日，甲骨文公司修改MySQL授權協定，移除了GPL。[11]但隨後有訊息稱這是一個bug。<br />
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h2 id="title3">MySQLの特性</h2>
+            <p>
+              使用C和C++編寫，並使用了多種編譯器進行測試，保證原始碼的可移植性。
+              支援AIX、BSDi、FreeBSD、HP-UX、Linux、Mac OS、Novell
+              NetWare、NetBSD、OpenBSD、OS/2
+              Wrap、Solaris、Windows等多種作業系統。
+              為多種程式語言提供了API。這些程式語言包括C、C++、C#、VB.NET、Delphi、Eiffel、Java、Perl、PHP、Python、Ruby和Tcl等。
+              支援多執行緒，充分利用CPU資源，支援多使用者。
+              最佳化的SQL查詢演算法，有效地提高查詢速度。
+              既能夠作為一個單獨的應用程式在客戶端伺服器網路環境中執行，也能夠作為一個程式庫而嵌入到其他的軟體中。
+              提供多語言支援，常見的編碼如中文的GB 2312、BIG5，日文的Shift
+              JIS等都可以用作資料表名和資料列名。
+              提供TCP/IP、ODBC和JDBC等多種資料庫連接途徑。
+              提供用於管理、檢查、最佳化資料庫操作的管理工具。
+              可以處理擁有上千萬條記錄的大型資料庫。
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="main-title">
+            <h2 id="title4">MySQLの應用</h2>
+            <p>
+              與其他的大型資料庫例如Oracle、IBM DB2、MS
+              SQL等相比，MySQL自有它的不足之處，如規模小、功能有限等，但是這絲毫也沒有減少它受歡迎的程度。<br />
+              對於一般的個人使用者和中小型企業來說，MySQL提供的功能已經綽綽有餘，而且由於MySQL是開放原始碼軟體，因此可以大大降低總體擁有成本。
+            </p>
+            <p>
+              MySQL PHP 語法<br />
+              MySQL 可應用於多種語言，包括 PERL， C， C++， JAVA 和
+              PHP，在這些語言中，MySQL 在 PHP 的 web 開發中是應用最廣泛。 PHP
+              提供了多種方式來訪問和操作 MySQL 資料庫記錄。 PHP 中連接 MySQL
+              資料庫，你可以使用 mysqli 擴展（MySQL Improved）或者 PDO（PHP Data
+              Objects）。
+            </p>
+            <p>
+              以上格式中 function 部分描述了 mysql 函數的功能，如：<br />
+              mysqli_connect($connect);<br />
+              mysqli_query($connect,"SQL 语句");<br />
+              mysqli_fetch_array()<br />
+              mysqli_close()<br />
+            </p>
+            
+              <h2 id="title5">MySQLの使用範例</h2>
+              <p>以下實例展示了 PHP 如何連接 MySQL：</p>
+              <div class="code">
+                <pre>PHP</pre>
+                <hr />
+                <pre><code class="language-php"> <？php $servername = 「本地主機」;
+$username = “your_username”;
+$password = “your_password”;
+$database = “your_database”;</code></pre>
+              </div>
+
+              <p>創建連接</p>
+              <div class="code">
+                <pre>PHP</pre>
+                <hr />
+                <pre><code class="language-php"> $conn = mysqli_connect（$servername， $username， $password，
+$database）;
+檢測連接
+如果 （！$conn）{
+&emsp;&emsp;die（“連接失敗： ” .mysqli_connect_error（））;
+}
+echo 「連接成功」;
+?></code></pre>
+              </div>
+
+              <p>
+                請替換<code class="language-php">$servername</code>、<code
+                  class="language-php"
+                  >$username</code
+                >
+                、<code class="language-php">$password</code> 和<code
+                  class="language-php"
+                  >$database</code
+                >
+              的值為你的實際資料庫連接資訊。
+                  連接成功后，你可以執行 SQL 查詢並處理結果：</p>
+                <div class="code">
+                  <pre>PHP</pre>
+                  <hr>
+                  <pre><code class="language-php">$sql = “SELECT ID， name， email FROM users”;
+$result = mysqli_query（$conn， $sql）;</code></pre>
+                </div>
+               
+              </p>
+             
+<div class="code">
+  <pre>PHP</pre>
+  <hr>
+  <pre><code class="language-php"> if （mysqli_num_rows（$result） > 0） {<br />
+&emsp;&emsp;//輸出數據<br />
+&emsp;&emsp;while（$row = mysqli_fetch_assoc（$result）） {
+&emsp;&emsp;&emsp;&emsp;echo“ID：”。$row[“id”].」 -
+名稱：“。$row[“名稱”].“ -
+電子郵件：”。$row[“電子郵件”].“&lt;br&gt;”;
+&emsp;&emsp;}
+} else {
+&emsp;&emsp;echo $result;
+} 
+//關閉連接 
+mysqli_close（$conn）;</code></pre>
+</div>
+               
+             
+            
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer style="margin: 0">
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../../frontend/">Overview</a>
+          <a href="../../frontend/HTML.html">HTML</a>
+          <a href="../../frontend/CSS.html">CSS</a>
+          <a href="../../frontend/JavaScript.html">Javascript</a>
+          <a href="../../frontend/React.html">React</a>
+          <a href="../../frontend/Angular.html">Angular</a>
+          <a href="../../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="../">Overview</a>
+          <a href="../nodejs.html">Node.js</a>
+          <a href="../java.html">Java</a>
+          <a href="../php.html">PHP</a>
+          <a href="../express.html">Express.js</a>
+          <a href="../spring.html">Spring Boot</a>
+          <a href="../laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./">OverView</a>
+
+          <a href="./mysql.html">MySQL</a>
+          <a href="./mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="../cicd/">OverView</a>
+          <a href="../cicd/anthos.html">Anthos</a>
+          <a href="../cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+    <script src="../../script/script.js"></script>
+    <script src="../../frontend/prism.js"></script>
+  </body>
+</html>

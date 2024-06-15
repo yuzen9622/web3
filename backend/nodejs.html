@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../frontend/prism.css" />
+    <link rel="shortcut icon" href="../img/node-js.png" type="image/x-icon">
+    <script
+    src="https://kit.fontawesome.com/b61b5c8440.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../style/style.RWD.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node.js</title>
+    <style>
+      header {
+        width: 100%;
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/vidoes/nodejs-bg.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="navbar">
+      <div class="rwd">
+        <button id="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="rwd-ul">
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li id="rwd-li">
+            <a>Frontend Development </a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="../frontend/">Overview</a>
+                </li>
+                <li><a href="../frontend/HTML.html">HTML</a></li>
+                <li><a href="../frontend/CSS.html">CSS</a></li>
+                <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+                <li><a href="../frontend/React.html">React</a></li>
+                <li><a href="../frontend/Angular.html">Angular</a></li>
+                <li><a href="../frontend/Vue.html">Vue</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Backend Development</a>
+            <div class="drop">
+              <ul>
+                <li>
+                  <a href="./">Overview</a>
+                </li>
+                <li><a href="./nodejs.html">Node.js</a></li>
+                <li><a href="./java.html">Java</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./express.html">Express.js</a></li>
+                <li><a href="./spring.html">Spring</a></li>
+                <li><a href="./laravel.html">Laravel</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>Database Management</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./sql/">Overview</a></li>
+                <li><a href="./sql/mysql.html">MySQL</a></li>
+                <li><a href="./sql/mogogdb.html">MongoDB</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rwd-li">
+            <a>CI/CD</a>
+            <div class="drop">
+              <ul>
+                <li><a href="./cicd/">Overview</a></li>
+                <li><a href="./cicd/anthos.html">Anthos</a></li>
+                <li><a href="./cicd/github.html">Github</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a href="../frontend/">Frontend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../frontend/HTML.html">HTML</a></li>
+              <li><a href="../frontend/CSS.html">CSS</a></li>
+              <li><a href="../frontend/JavaScript.html">Javascript</a></li>
+              <li><a href="../frontend/React.html">React</a></li>
+              <li><a href="../frontend/Angular.html">Angular</a></li>
+              <li><a href="../frontend/Vue.html">Vue</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./">Backend</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/nodejs.html">Node.js</a></li>
+              <li><a href="../backend/java.html">Java</a></li>
+              <li><a href="../backend/php.html">PHP</a></li>
+              <li><a href="../backend/express.html">Express.js</a></li>
+              <li><a href="../backend/spring.html">Spring</a></li>
+              <li><a href="../backend/laravel.html">Laravel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./sql/">SQL</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/sql/mysql.html">MySQL</a></li>
+              <li><a href="../backend/sql/mogogdb.html">MongoDB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="./cicd/">CICD</a>
+          <div class="drop">
+            <ul>
+              <li><a href="../backend/cicd/anthos.html">Anthos</a></li>
+              <li><a href="../backend/cicd/github.html">Github</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <header></header>
+    <div class="all-main">
+      <aside class="fade-up">
+<div class="menu">
+  <p>目錄</p>
+  <ol start="1">
+   
+    <li class="li1"><a href="#1">Node.js是甚麼?</a></li>
+    <li class="li2"><a href="#2">Node.js 應用範例</a></li>
+    <li class="li3"><a href="#3">如何安裝 Node.js</a></li>
+    <li><a href="https://nodejs.org/en" target="_blank">Node.js網站連結</a></li>
+  </ol>
+</div>
+        
+      </aside>
+      <div class="container fade-right">
+        <section>
+         <div class="main-title">
+            <h2 id="1" >Node.js是甚麼?</h2>
+            <p>
+              「Node.js」是能夠讓 JavaScript 在電腦上運行的工具，就像 Python 或
+              Ruby 一樣，而不只受限於瀏覽器環境。 當 Node.js 執行 I/O
+              操作時，如從網路讀取、訪問資料庫或文件系統，Node.js
+              不會阻塞線程和浪費 CPU 週期等待，而是會在回應返回時恢復操作。
+              具有獨特的優勢，因為數百萬為瀏覽器編寫 JavaScript
+              的前端開發者現在除了用戶端代碼之外，還能夠編寫伺服器端代碼，而無需學習完全不同的語言。
+            </p>
+            <p>從網站伺服器開發的觀點來看 Node 有幾項優點：</p>
+            <ul>
+              <li>
+                <p>高效能!Node 旨在提升生產率和網頁應用的可擴充性。而且它非常適合網站開發常見的問題，例如：即時網站應用</p>
+              </li>
+              <li>
+                <p>使用舊版本的 JavaScript 進行程式編寫，這表示不用多花力氣在轉換瀏覽器和伺服器上的程式碼</p>
+              </li>
+              <li>
+                <p>與其他傳統的 Web 伺服器語言（例如 Python，PHP 等）相比，JavaScript 是一種相對新的程式語言，它受益於語言設計的改進。許多其他新的和流行的語言都可以編譯/轉換成 JavaScript，因此你還可以使用 CoffeeScript， ClojureScript，Scala，LiveScript 等</p>
+              </li>
+              <li>
+                <p>Node Package Manager(NPM) 提供數十萬個第三方套件，是最佳的依賴解決方案也可以用來自動化大部分構建工具鏈。</p>
+              </li>
+              <li>
+                <p>它是可移植的，能夠在 Windows, OS x, Linux, Solaris, FreeBSD, OpenBSD, WebOS 和 NonStop OS 上執行。許多 web 主機提供方也支援使用 Node，通常會提供特定的基礎設施和文件</p>
+              </li>
+              <li>
+                <p>擁有非常活耀的第三方生態系統和開發者社群，許多人樂意提供幫助</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+
+         
+          <h2 id="2">Node.js 應用範例</h2>
+          <p>Node.js 最常見的 Hello World 示例是一個 Web 伺服器：</p>
+       
+        <div class="code">
+          <pre>
+                <code class="lang-js">
+const http = require('http');
+    
+const hostname = '127.0.0.1';
+const port = 3000;
+                    
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World\n');
+});
+                    
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});          
+                </code>
+            </pre>
+        </div>
+        <p>
+          要執行此代碼段，請將其儲存為 檔案並在終端中執行 。server.jsnode
+          server.js http 的方法創建一個新的 HTTP
+          伺服器並返回它。createServer() 伺服器設置為監聽指定的埠和主機名。
+          當伺服器就緒時，回調函數被調用，在這種情況下通知我們伺服器正在運行。
+        </p>
+      </div>
+        </section>
+       <section>
+        <div class="main-title">
+           
+          <h2 id="3">如何安裝 Node.js</h2>
+          <p>
+            Node.js 可以通過不同的方式安裝。
+            <a href="https://nodejs.cn/download/"
+              >https://nodejs.cn/download/</a
+            >
+            提供所有主要平臺的官方包。 安裝
+            Node.js的一種非常方便的方法是通過包管理器。
+            在這種情況下，每個作業系統都有自己的。
+            <a href=" https://dev.nodejs.cn/download/package-manager/">
+              https://dev.nodejs.cn/download/package-manager/</a
+            >
+            中列出了 MacOS、Linux 和 Windows 的其他包管理器。
+          </p>
+        </div>
+      </section>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-container">
+          <p>Frontend</p>
+          <a href="../frontend/">Overview</a>
+          <a href="../frontend/HTML.html">HTML</a>
+          <a href="../frontend/CSS.html">CSS</a>
+          <a href="../frontend/JavaScript.html">Javascript</a>
+          <a href="../frontend/React.html">React</a>
+          <a href="../frontend/Angular.html">Angular</a>
+          <a href="../frontend/Vue.html">Vue</a>
+        </div>
+        <div class="footer-container">
+          <p>Backend</p>
+          <a href="./">Overview</a>
+          <a href="./nodejs.html">Node.js</a>
+          <a href="./java.html">Java</a>
+          <a href="./php.html">PHP</a>
+          <a href="./express.html">Express.js</a>
+          <a href="./spring.html">Spring Boot</a>
+          <a href="./laravel.html">Laravel</a>
+        </div>
+        <div class="footer-container">
+          <p>SQL</p>
+          <a href="./sql/">OverView</a>
+
+          <a href="./sql/mysql.html">MySQL</a>
+          <a href="./sql/mogogdb.html">MongoDB</a>
+        </div>
+        <div class="footer-container">
+          <p>CI/CD</p>
+          <a href="./cicd/">OverView</a>
+          <a href="./cicd/anthos.html">Anthos</a>
+          <a href="./cicd/github.html">Github</a>
+        </div>
+      </div>
+      <pre>Copyright © 2024 Oscar689</pre>
+    </footer>
+   <script src="../script/script.js"></script>    
+   <script src="../frontend/prism.js"></script>
+  </body>
+</html>
