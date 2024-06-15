@@ -48,9 +48,15 @@ window.addEventListener("scroll", () => {
   let width = (top / height) * 100;
   scrollbar.style.width = `${width}%`;
 
-  width > 1
-    ? (topBtn.style.visibility = "visible")
-    : (topBtn.style.visibility = "hidden");
+  if (width > 1) {
+    topBtn.style.visibility = "visible";
+    topBtn.style.opacity = 1;
+    topBtn.style.transform = "translateY(-10px)";
+  } else {
+    topBtn.style.visibility = "hidden";
+    topBtn.style.opacity = 0;
+    topBtn.style.transform = "translateY(0px)";
+  }
 });
 
 topBtn.addEventListener("click", () => {
