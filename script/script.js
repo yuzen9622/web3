@@ -44,6 +44,12 @@ let navbarEl = document.getElementsByClassName("navbar");
 let lastScroll = 0;
 function listenScrollY() {
   let currentScroll = window.scrollY;
+  console.log(window.scrollY);
+  if (window.scrollY < 10) {
+    navbarEl[0].style.backgroundColor = "transparent";
+  } else {
+    navbarEl[0].style.backgroundColor = "var(--dark-blue)";
+  }
   if (currentScroll > lastScroll) {
     navbarEl[0].style.transform = "translateY(-100%)";
     rwdUl.style.transform = "translateY(-120%)";
@@ -99,11 +105,16 @@ bar.addEventListener("click", () => {
   });
   if (isOpen) {
     rwdUl.style.transform = "translateY(-120%)";
-
+    if (window.scrollY < 10) {
+      navbarEl[0].style.backgroundColor = "transparent";
+    } else {
+      navbarEl[0].style.backgroundColor = "var(--dark-blue)";
+    }
     // rwdUl.style.visibility = "hidden";
     // rwdUl.style.backgroundColor = "transparent";
     isOpen = false;
   } else {
+    navbarEl[0].style.backgroundColor = "var(--dark-blue)";
     rwdUl.style.transform = "translateY(0)";
     rwdUl.style.opacity = 1;
     rwdUl.style.backgroundColor = "var(--dark-blue)";
@@ -124,5 +135,5 @@ window.addEventListener("scroll", () => {
     listenScrollY();
   }
 });
-
+listenScrollY();
 navbarControle();
