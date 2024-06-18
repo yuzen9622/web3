@@ -63,6 +63,7 @@ function navbarControle() {
   rwdLi.forEach((el, index) => {
     el.addEventListener("click", () => {
       drop.forEach((e, key) => {
+        if (key > 2) return;
         if (index === key) {
           if (e.style.display === "flex") {
             e.style.display = "none";
@@ -82,8 +83,8 @@ let rwdLi = document.querySelectorAll("#rwd-li");
 let drop = document.querySelectorAll(".drop");
 let isOpen = false;
 bar.addEventListener("click", () => {
-  drop.forEach((e) => {
-    e.style.display = "none";
+  drop.forEach((e, key) => {
+    if (key < 3) e.style.display = "none";
   });
   if (isOpen) {
     rwdUl.style.transform = "translateY(-120%)";
