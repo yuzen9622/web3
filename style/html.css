@@ -96,13 +96,13 @@ ul li {
     
     visibility: visible;
     opacity: 1;
-  transform: scaleX(1)
+    transform: scaleX(1)
 
 }
 
 .drop {
    
-   visibility: hidden;
+    visibility: hidden;
     position: absolute;
     width: auto;
     border-radius: 5px;
@@ -126,7 +126,7 @@ ul li {
 .drop li {
     display: flex;
     justify-content: center;
- margin: 5px;
+    margin: 5px;
     width: 100%;
 }
 
