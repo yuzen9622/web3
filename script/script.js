@@ -40,14 +40,26 @@ let topBtn = document.getElementById("top");
 document.addEventListener("scroll", () => {
   menuTitle();
 });
-window.addEventListener("scroll", () => {
+let navbarEl = document.getElementsByClassName("navbar");
+let lastScroll = 0;
+function listenScrollY() {
+  let currentScroll = window.scrollY;
+  if (currentScroll > lastScroll) {
+    navbarEl[0].style.transform = "translateY(-100%)";
+    rwdUl.style.transform = "translateY(-120%)";
+    isOpen = false;
+  } else {
+    navbarEl[0].style.transform = "translateY(0)";
+  }
+  lastScroll = currentScroll;
+}
+function scrollbarFunc() {
   let top = document.documentElement.scrollTop;
   let height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   let width = (top / height) * 100;
   scrollbar.style.width = `${width}%`;
-
   if (width > 1) {
     topBtn.style.visibility = "visible";
     topBtn.style.opacity = 1;
@@ -57,15 +69,25 @@ window.addEventListener("scroll", () => {
     topBtn.style.opacity = 0;
     topBtn.style.transform = "translateY(0px)";
   }
-});
+}
 
-topBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+function navbarControle() {
+  rwdLi.forEach((el, index) => {
+    el.addEventListener("click", () => {
+      drop.forEach((e, key) => {
+        if (index === key) {
+          if (e.style.display === "flex") {
+            e.style.display = "none";
+          } else {
+            e.style.display = "flex";
+          }
+        } else {
+          e.style.display = "none";
+        }
+      });
+    });
   });
-});
-
+}
 let bar = document.getElementById("bar");
 let rwdUl = document.getElementById("rwd-ul");
 let rwdLi = document.querySelectorAll("#rwd-li");
@@ -89,21 +111,19 @@ bar.addEventListener("click", () => {
     isOpen = true;
   }
 });
-function navbarControle() {
-  rwdLi.forEach((el, index) => {
-    el.addEventListener("click", () => {
-      drop.forEach((e, key) => {
-        if (index === key) {
-          if (e.style.display === "flex") {
-            e.style.display = "none";
-          } else {
-            e.style.display = "flex";
-          }
-        } else {
-          e.style.display = "none";
-        }
-      });
-    });
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
-}
+});
+
+window.addEventListener("scroll", () => {
+  scrollbarFunc();
+  console.log(document.body.offsetWidth);
+  if (document.body.offsetWidth <= 720) {
+    listenScrollY();
+  }
+});
+
 navbarControle();
