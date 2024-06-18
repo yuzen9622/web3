@@ -79,9 +79,7 @@
     
 }
 .fade-up{
-    
     animation: startIn linear 0.5s ;
-    
 }
 .fade-right{
     animation: startInright linear 0.5s ;
@@ -89,8 +87,6 @@
 .fade-left{
     animation: startleft linear 0.5s ;
 }
-
-
 
 body{
     background-color: var(--dark-color);
