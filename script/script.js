@@ -58,7 +58,19 @@ function scrollbarFunc() {
     topBtn.style.transform = "translateY(0px)";
   }
 }
-
+let navbarEl = document.getElementsByClassName("navbar");
+let lastScroll = 0;
+function listenScrollY() {
+  let currentScroll = window.scrollY;
+  if (currentScroll > lastScroll && document.body.offsetWidth <= 720) {
+    navbarEl[0].style.transform = "translateY(-100%)";
+    rwdUl.style.transform = "translateY(-120%)";
+    isOpen = false;
+  } else {
+    navbarEl[0].style.transform = "";
+  }
+  lastScroll = currentScroll;
+}
 function navbarControle() {
   rwdLi.forEach((el, index) => {
     el.addEventListener("click", () => {
@@ -109,6 +121,8 @@ topBtn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   scrollbarFunc();
+
+  listenScrollY();
 });
 
 navbarControle();
