@@ -29,7 +29,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 let hiddenEl = document.querySelectorAll(
-  ".hidden,h2[id],div.main-title>p,.code,.example,aside,div.main-title>h4,div.main-title>ul>li,div.main-title>ol>li,.div.main-title>ol>li,a.box,img,h2,table"
+  ".hidden,h2[id],div.main-title>p,.code,.example,aside,div.main-title>h4,div.main-title>ul>li,div.main-title>ol>li,.div.main-title>ol>li,a.box,div.img-p>img,h2,table"
 );
 hiddenEl.forEach((el) => {
   observer.observe(el);
