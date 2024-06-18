@@ -82,8 +82,8 @@
 @media screen and (max-width:720px) {
  
     header{
-    
-      height: 40vh !important;
+    margin-top: 40px;
+      height: 50vh!important;
     }
     .all-main{
        
