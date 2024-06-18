@@ -28,7 +28,7 @@
         transform: translateY(100px)
       
     }
-to{
+    to{
         opacity: 1;
         transform:translateX(0);
       
@@ -42,7 +42,7 @@ to{
         transform: translate(10px,0);
       
     }
-to{
+    to{
         opacity: 1;
         transform:translate(0,0);
     }
@@ -63,7 +63,7 @@ to{
         transform: translate(-20px,0);
       
     }
-to{
+    to{
         opacity: 1;
         transform:translate(0,0);
     }
@@ -95,8 +95,8 @@ to{
 body{
     background-color: var(--dark-color);
     color: var(--skin-color);
-   overflow-x: hidden;
-   width: 100vw;
+    overflow-x: hidden;
+    width: 100vw;
 
 }
 .introduce{
@@ -218,7 +218,7 @@ align-items: center;
     background-color:#ceb5b54c;
     border-radius: 15px;
     border: 2px solid var(--skin-color);
-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .title-frontend p{
@@ -243,8 +243,8 @@ transition: all 0.5s;
 }
 .title-frontend i{
     padding: 0 0 0 10px;
-transform: translateX(-20px);
-opacity: 0;
+    transform: translateX(-20px);
+    opacity: 0;
     transition: all 0.5s;
 }
 .title-frontend span{
@@ -344,7 +344,7 @@ width: 0;
     width: 100px; 
     height: 100px;
     margin: 0 20px;
-transition: all .5s;
+    transition: all .5s;
 }
 .role-img img:hover{
     transform: scale(1.1);
@@ -355,23 +355,22 @@ transition: all .5s;
 }
 footer{
 
-width: 100%;
-background-color: var(--dark-blue);
-color: var(--dark-color);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 10vh;
-padding: 20px 0;
+    background-color: var(--dark-blue);
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 20px 0;
+    width: 100%;
 }
 .main-footer{
   
     display: flex;
     flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-   
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .footer-container{
     display: flex;
@@ -398,9 +397,9 @@ justify-content: center;
 .main-footer a::before{
     content: "";
     position: absolute;
-   bottom: 0;
-   left: 0;
-   border-bottom: 2px solid white;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid white;
     background-color: white;
     width:100%;
     transform: scaleX(0);
@@ -414,10 +413,10 @@ justify-content: center;
     position: relative;
     background-position-y: 0;
     display: flex;
-background-attachment: fixed;
-background-color: rgba(0, 0, 0, 0.7);
-background-image: url(../img/code-bg.jpg);
-background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../img/code-bg.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 
 }
 .article{
@@ -425,7 +424,7 @@ background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
     align-items: center;
-padding: 20px 0;
+    padding: 20px 0;
     background-color: var(--dark-color)
     
 }
@@ -439,7 +438,7 @@ padding: 20px 0;
     background-color: rgba(0, 0, 0, 0.7);
     background-position: bottom left;
     background-blend-mode: multiply;
- background-image: url(../img/code-bg.jpg);
+    background-image: url(../img/code-bg.jpg);
         
 }
 .word{
@@ -452,12 +451,12 @@ padding: 20px 0;
 
     color: white;
     font-size: 80px;
-width: 50%;
+    width: 50%;
 }
 
 .main-sql{
     width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     background-position: bottom left;
     background-blend-mode: multiply;
     background-image: url(../img/code-bg3.jpg);
@@ -474,7 +473,7 @@ aside{
 }
 
 .box:hover{
-transform: translateY(-3px) !important;
+    transform: translateY(-3px) !important;
     border-color: var(--skin-color);
     box-shadow:var(--skin-color)0px 0px 10px .5px ;
     color: var(--skin-color);
@@ -521,8 +520,7 @@ transform: translateY(-3px) !important;
     bottom: 5%;
     right: 5%;
     border: 1px solid var(--skin-color);
-
-transition: all .3s;
+    transition: all .3s;
 
 }
 #top i{
@@ -543,11 +541,10 @@ transition: all .3s;
     border: none;
     background-color: transparent;
     color: var(--skin-color);
-padding: 5px;
-margin: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 .rwd i{
-
     font-size: 20px;
 }
 
