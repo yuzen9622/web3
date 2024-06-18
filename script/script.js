@@ -120,7 +120,6 @@ topBtn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   scrollbarFunc();
-  console.log(document.body.offsetWidth);
   if (document.body.offsetWidth <= 720) {
     listenScrollY();
   }
