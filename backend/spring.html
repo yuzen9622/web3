@@ -231,7 +231,7 @@
           <div class="main-title">
             <h2 id="title3">Spring Boot範例</h2>
             <p>
-              @Required： 它適用於 bean 設定方法。
+             <code class="language-java">@Required</code> ： 它適用於 bean 設定方法。
               它指示必須在設定時使用必需的屬性填充帶註解的Bean，否則它將引發異常
               BeanInitilizationException。
             </p>
@@ -254,7 +254,7 @@ public class Machine {
             
             </p>
             <p>
-              @Autowired： ：
+              <code class="language-java">@Autowired</code>：
               Spring透過提供@Autowired注解來提供基於註解的自動裝配。
               它用於自動連接setter方法，實例變數和構造函數上的spring bean。
               當我們使用@Autowired批注時，spring容器通過匹配數據類型自動連接bean。
@@ -273,7 +273,8 @@ this.person=person;
             </div>
         
             <p>
-              @Configuration： ： 它是一個類級別的注解。
+              <code class="language-java">@Configuration</code>
+              ： 它是一個類級別的注解。
               帶有@Configuration注解的類由Spring Containers用作bean定義的源。
             </p>
             <div class="code">
@@ -288,7 +289,8 @@ public class Vehicle{
             </div>
            
             <p>
-              @ComponentScan： ： 當我們要掃描套件中的bean時使用。
+              <code class="language-java">@ComponentScan</code>
+              ： 當我們要掃描套件中的bean時使用。
               它與註解@Configuration一起使用。
               我們還可以指定用於掃描Spring元件的基本軟體包。
             </p>
@@ -303,7 +305,8 @@ public class ScanComponent{
             </div>
            
             <p>
-              @Bean： 是方法級的註解。 它是XML標記的代替方法。
+              <code class="language-java">@Bean</code>
+              ： 是方法級的註解。 它是XML標記的代替方法。
               它告訴產生由Spring Container管理的bean的方法。
             </p>
             <div class="code">

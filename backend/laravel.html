@@ -175,14 +175,20 @@
               在 Laravel 中，最簡單的路由是封閉性路由。打開 app/routes.php
               檔案，並且增加下面的路由在檔案的最下方：
             </p>
+            <div class="code">
+              <pre>PHP</pre>
+              <hr />
+              <pre><code class="language-php">
+Route::get('users', function(){
+return 'Users!';
+});
+              </code></pre>
+            </div>
             <p>
-              Route::get('users', function(){<br />
-              return 'Users!';<br />
-              });<br />
-            </p>
-            <p>
-              路由也可以指向一個控制器類別。例如：<br />
-              Route::get('users', 'UserController@getIndex');<br />
+              路由也可以指向一個控制器類別。例如：
+              <code class="language-php"
+                >Route::get('users', 'UserController@getIndex');</code
+              >
               這個路由告訴框架 /users 路由的請求應該使用 UserController 類別的
               getIndex 方法。<br />
             </p>
@@ -233,8 +239,13 @@ return View::make('users'); });</code></pre>
               MySQL，所以必須將資料庫連接的機密資訊填入其中。<br />
               也可以更改 driver 選項為 sqlite，如此他就會使用放置在 app/database
               裡的 SQLite 資料庫。 接下來，創建遷移檔，我們使用 Artisan
-              CLI。在專案的根目錄下，在終端裡執行下列指令：<br />
-              php artisan migrate:make create_users_table<br />
+              CLI。在專案的根目錄下，在終端裡執行下列指令：
+              <div class="code">
+                <pre>Terminal</pre>
+                <hr>
+                <pre><code class="language-powershell">php artisan migrate:make create_users_table</code></pre>
+              </div>
+             
               然後，在 app/database/migrations
               目錄下找到產生的遷移檔。檔案中有一個包含了兩個方法 up 和 down
               的類別。<br />
