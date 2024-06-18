@@ -131,7 +131,6 @@ topBtn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   scrollbarFunc();
-
   listenScrollY();
 });
 window.addEventListener("resize", () => {
