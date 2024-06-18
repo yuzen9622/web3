@@ -44,20 +44,22 @@ let navbarEl = document.getElementsByClassName("navbar");
 let lastScroll = 0;
 function listenScrollY() {
   let currentScroll = window.scrollY;
-  console.log(window.scrollY);
-  if (window.scrollY < 10) {
+  if (currentScroll < 10 && document.body.offsetWidth <= 720) {
     navbarEl[0].style.backgroundColor = "transparent";
   } else {
     navbarEl[0].style.backgroundColor = "var(--dark-blue)";
+    navbarEl[0].style.transform = "";
   }
-  if (currentScroll > lastScroll) {
-    navbarEl[0].style.transform = "translateY(-100%)";
-    rwdUl.style.transform = "translateY(-120%)";
-    isOpen = false;
-  } else {
-    navbarEl[0].style.transform = "translateY(0)";
+  if (document.body.offsetWidth <= 720) {
+    if (currentScroll > lastScroll) {
+      navbarEl[0].style.transform = "translateY(-100%)";
+      rwdUl.style.transform = "translateY(-120%)";
+      isOpen = false;
+    } else {
+      navbarEl[0].style.transform = "translateY(0)";
+    }
+    lastScroll = currentScroll;
   }
-  lastScroll = currentScroll;
 }
 function scrollbarFunc() {
   let top = document.documentElement.scrollTop;
@@ -105,11 +107,9 @@ bar.addEventListener("click", () => {
   });
   if (isOpen) {
     rwdUl.style.transform = "translateY(-120%)";
-    if (window.scrollY < 10) {
-      navbarEl[0].style.backgroundColor = "transparent";
-    } else {
-      navbarEl[0].style.backgroundColor = "var(--dark-blue)";
-    }
+    window.scrollY < 10 && document.body.offsetWidth <= 720
+      ? (navbarEl[0].style.backgroundColor = "transparent")
+      : (navbarEl[0].style.backgroundColor = "var(--dark-blue)");
     // rwdUl.style.visibility = "hidden";
     // rwdUl.style.backgroundColor = "transparent";
     isOpen = false;
@@ -131,9 +131,10 @@ topBtn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   scrollbarFunc();
-  if (document.body.offsetWidth <= 720) {
-    listenScrollY();
-  }
+
+  listenScrollY();
 });
-listenScrollY();
+window.addEventListener("resize", () => {
+  listenScrollY();
+});
 navbarControle();
