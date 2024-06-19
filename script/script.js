@@ -75,7 +75,7 @@ function navbarControle() {
   rwdLi.forEach((el, index) => {
     el.addEventListener("click", () => {
       drop.forEach((e, key) => {
-        if (key > 2) return;
+        if (key > 3) return;
         if (index === key) {
           if (e.style.display === "flex") {
             e.style.display = "none";
